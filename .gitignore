@@ -1,0 +1,42 @@
+# 能重新生成的东西：清理项目时会移到废纸篓（规则见 ~/存储指南.md 第 13 节）
+.tmp/
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+.next/
+.cache/
+coverage/
+*.log
+.DS_Store
+
+# 密钥：不进版本库，清理时也不会删
+.env
+.env.*
+!.env.example
+
+# 运行数据（每天抽了多少根）
+data/
+
+# 下载的素材（node scripts/fetch-assets.mjs 可恢复）
+web/public/assets/
+# 构建产物
+dist/
+web/public/gen/
+
+# 发布包副本（npm run release 可重建）
+output/*.tgz
+
+# 演示视频（可从游戏里重录）
+output/videos/
+
+# 不公开：自己录的原始音效、本机项目笔记（有账号和服务器信息）、给用户的产出副本
+sfx-src/
+PROJECT.md
+output/

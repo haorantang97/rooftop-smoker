@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>抽根烟</title>
+<meta name="description" content="一家深夜便利店，楼顶有几个对着绝美风景的天台。匿名进来，拿包烟、拿罐啤酒，上楼跟陌生人一起抽根烟。没有烟草，没有尼古丁。">
+<meta name="theme-color" content="#0d0f1a">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='3' y='14' width='22' height='5' fill='%23eee'/><rect x='3' y='14' width='6' height='5' fill='%23d08a3c'/><rect x='25' y='14' width='4' height='5' fill='%23ff6a2a'/></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+
+<header id="top">
+  <div class="chip where"><b id="roomName">深夜便利店</b><span id="placeName">店里</span></div>
+  <div id="stats"></div>
+  <span id="clock" class="chip quiet"></span>
+  <button id="soundBtn" class="chip icon" title="声音">🔊</button>
+</header>
+
+<div id="log" class="hidden" aria-live="polite"></div>
+
+<div id="picker" class="pop hidden"></div>
+<div id="personMenu" class="pop hidden"></div>
+<div id="asks"></div>
+
+<div id="chat" class="hidden">
+  <form id="chatForm" autocomplete="off">
+    <input id="chatInput" maxlength="60" placeholder="匿名说一句（60 字以内，回车发送）" enterkeyhint="send">
+    <button type="submit">发送</button>
+  </form>
+  <div id="chatPhrases"></div>
+</div>
+
+<button id="panL" class="pan hidden" aria-label="向左看">‹</button>
+<button id="panR" class="pan hidden" aria-label="向右看">›</button>
+
+<nav id="bar"></nav>
+
+<div id="me"></div>
+<div id="toast" class="hidden"></div>
+<div id="conn" class="hidden">正在重新连接…</div>
+
+<div id="gate" class="hidden">
+  <div class="card">
+    <h1>抽根烟</h1>
+    <p>一家深夜便利店，楼顶有几个天台。<br>匿名进来，拿包烟，拿罐喝的，上楼跟陌生人一起看会儿风景。</p>
+    <ul>
+      <li>店里左右拖动环顾，点货架拿东西，<b>烟柜</b>里是世界各地的烟。</li>
+      <li>每个天台对着不一样的风景，天色跟着你那边的时间走。</li>
+      <li>点别人可以 <b>要根烟</b>、<b>借个火</b>，对方可以不给。</li>
+    </ul>
+    <p class="fine">这里的烟是画出来的，牌子都是编的：没有烟草，没有尼古丁。仅限 18 岁以上。<br>吸烟有害健康，现实里能少抽就少抽。</p>
+    <button id="enterBtn" class="primary big">我已满 18 岁，推门进去</button>
+  </div>
+</div>
+
+<footer id="fine">虚拟吸烟 · 不含烟草和尼古丁 · 吸烟有害健康</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
+<title>抽根烟</title>
+<meta name="description" content="一家深夜便利店，楼顶有几个对着绝美风景的天台。匿名进来，上楼跟陌生人一起抽根烟。没有烟草，没有尼古丁。">
+<meta name="theme-color" content="#05060c">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='3' y='14' width='22' height='5' fill='%23eee'/><rect x='3' y='14' width='6' height='5' fill='%23d08a3c'/><rect x='25' y='14' width='4' height='5' fill='%23ff6a2a'/></svg>">
+<link rel="stylesheet" href="./style.css">
+<!-- 语言：按浏览器语言挑一种支持的（?lang=ja 这样可以强制），写在 <html lang> 上；脚本加载前就要定好，加载画面才不会闪。
+     加新语言：LANGS 里加代码，src/i18n-dict.js 里加译文，再在本页末尾的 HL 里补加载画面和年龄确认那几句 -->
+<script>(function(){var LANGS=['zh','zh-TW','en','ja','ko','es','fr','de','pt','ru','it','tr','id','vi','th','hi'];
+function pick(s){s=String(s||'').toLowerCase();if(!s)return null;if(s.indexOf('zh')===0)return /tw|hk|mo|hant/.test(s)?'zh-TW':'zh';var b=s.split('-')[0];return LANGS.indexOf(b)>=0?b:null;}
+var l=pick(new URLSearchParams(location.search).get('lang'));var ns=navigator.languages||[navigator.language];for(var i=0;!l&&i<ns.length;i++)l=pick(ns[i]);l=l||'en';
+document.documentElement.lang=l==='zh'?'zh-CN':l;if(l!=='zh')document.title=l==='zh-TW'?'抽根菸':'Smoke Break';})();</script>
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="fade"></div>
+<div id="crosshair"></div>
+<div id="aimTip"></div>
+
+<header id="top">
+  <button id="soundBtn" class="chip icon" title="声音">🔊</button>
+</header>
+<div id="picker" class="pop hidden"></div>
+<div id="personMenu" class="pop hidden"></div>
+<div id="asks"></div>
+<nav id="bar"></nav>
+<div id="notice"></div>
+<div id="conn" class="hidden"><span data-l="zh">正在重新连接…</span><span data-l="en">Reconnecting…</span></div>
+<!-- 一打开就显示：正在买烟的路上（一根像素烟，烟头一闪一闪、冒烟） -->
+<div id="loading"><div class="ld"><i class="cig"><b></b><em></em><em></em><em></em></i><span data-l="zh">正在买烟的路上…</span><span data-l="en">On the way to grab some smokes…</span></div></div>
+
+<!-- 年龄确认：没有标题，只有一句提醒和两个按钮；未满 18 岁就不让进 -->
+<div id="gate" class="hidden">
+  <div class="card gate" id="ageCard">
+    <p class="warn" data-l="zh">吸烟有害健康，现实里能少抽就少抽。</p>
+    <p class="warn" data-l="en">Smoking harms your health. In real life, smoke less if you can.</p>
+    <div class="ages">
+      <button id="enterBtn" class="primary big"><span data-l="zh">我已满 18 岁</span><span data-l="en">I'm over 18</span></button>
+      <button id="minorBtn" class="ghost big"><span data-l="zh">未满 18 岁</span><span data-l="en">Under 18</span></button>
+    </div>
+  </div>
+  <div class="card gate hidden" id="blocked">
+    <p class="warn" data-l="zh">未满 18 岁不能进入。</p>
+    <p class="warn" data-l="en">You must be 18 or older to enter.</p>
+  </div>
+  <!-- 起名字：默认填一个随机名，可以改、可以摇一个新的；每台设备问一次 -->
+  <div class="card gate hidden" id="nameCard">
+    <p class="warn"><span data-l="zh">给自己起个名字</span><span data-l="en">Pick a name</span></p>
+    <div class="namerow"><input id="nameIn" maxlength="12" autocomplete="off" spellcheck="false" enterkeyhint="go"><button id="diceBtn" class="ghost" type="button" aria-label="random name">🎲</button></div>
+    <button id="nameBtn" class="primary big"><span data-l="zh">进门</span><span data-l="en">Enter</span></button>
+  </div>
+</div>
+<div id="idle" class="hidden"><div class="card gate"><p class="warn"><span data-l="zh">你发呆太久了</span><span data-l="en">You were away for a while</span></p><button id="backBtn" class="primary big"><span data-l="zh">回来抽一根</span><span data-l="en">Come back</span></button></div></div>
+<!-- 其他语言：把上面几处英文（繁体中文时是简体那份）换成当地译文 -->
+<script>(function(){var l=document.documentElement.lang,HL={
+'zh-TW':['正在重新連線…','正在買菸的路上…','吸菸有害健康，現實裡能少抽就少抽。','我已滿 18 歲','未滿 18 歲','未滿 18 歲不能進入。','給自己取個名字','進門','你發呆太久了','回來抽一根'],
+ja:['再接続中…','タバコを買いに行く途中…','喫煙は健康を害します。現実ではできるだけ控えましょう。','18歳以上です','18歳未満です','18歳未満は入れません。','名前を決めよう','入る','しばらく離れていました','戻る'],
+ko:['다시 연결하는 중…','담배 사러 가는 중…','흡연은 건강에 해롭습니다. 현실에서는 되도록 줄이세요.','18세 이상입니다','18세 미만입니다','18세 미만은 입장할 수 없습니다.','이름을 정해 주세요','들어가기','한동안 자리를 비웠어요','돌아가기'],
+es:['Reconectando…','De camino a comprar tabaco…','Fumar perjudica la salud. En la vida real, fuma menos si puedes.','Tengo 18 años o más','Menor de 18','Debes tener 18 años o más para entrar.'],
+fr:['Reconnexion…','En route pour acheter des clopes…','Fumer nuit à la santé. Dans la vraie vie, fume moins si tu peux.',"J'ai 18 ans ou plus",'Moins de 18 ans','Il faut avoir 18 ans ou plus pour entrer.'],
+de:['Verbinde neu…','Unterwegs, Kippen kaufen…','Rauchen schadet der Gesundheit. Rauch im echten Leben lieber weniger.','Ich bin über 18','Unter 18','Du musst mindestens 18 sein, um reinzukommen.'],
+pt:['Reconectando…','A caminho de comprar cigarros…','Fumar faz mal à saúde. Na vida real, fume menos se puder.','Tenho 18 anos ou mais','Menor de 18','Você precisa ter 18 anos ou mais para entrar.'],
+ru:['Переподключение…','Иду за сигаретами…','Курение вредит здоровью. В реальной жизни кури поменьше.','Мне есть 18','Мне нет 18','Вход только с 18 лет.'],
+it:['Riconnessione…','Sto andando a comprare le sigarette…','Il fumo danneggia la salute. Nella vita reale, fuma meno se puoi.','Ho almeno 18 anni','Ho meno di 18 anni','Devi avere almeno 18 anni per entrare.'],
+tr:['Yeniden bağlanıyor…','Sigara almaya gidiyorum…','Sigara sağlığa zararlıdır. Gerçek hayatta elinden geldiğince az iç.','18 yaşından büyüğüm','18 yaşından küçüğüm','Girmek için en az 18 yaşında olmalısın.'],
+id:['Menyambung ulang…','Lagi jalan beli rokok…','Merokok membahayakan kesehatan. Di dunia nyata, kurangi kalau bisa.','Saya 18 tahun ke atas','Di bawah 18 tahun','Kamu harus berusia 18 tahun ke atas untuk masuk.'],
+vi:['Đang kết nối lại…','Đang trên đường đi mua thuốc…','Hút thuốc có hại cho sức khỏe. Ngoài đời, bớt hút được thì bớt.','Tôi đủ 18 tuổi','Chưa đủ 18 tuổi','Bạn phải đủ 18 tuổi để vào.'],
+th:['กำลังเชื่อมต่อใหม่…','กำลังไปซื้อบุหรี่…','การสูบบุหรี่เป็นอันตรายต่อสุขภาพ ในชีวิตจริงสูบให้น้อยลงถ้าทำได้','อายุ 18 ปีขึ้นไป','อายุต่ำกว่า 18 ปี','ต้องมีอายุ 18 ปีขึ้นไปจึงจะเข้าได้'],
+hi:['फिर से जुड़ रहे हैं…','सिगरेट ख़रीदने जा रहे हैं…','धूम्रपान स्वास्थ्य के लिए हानिकारक है। असल ज़िंदगी में हो सके तो कम पिएँ।','मेरी उम्र 18+ है','18 से कम','प्रवेश के लिए 18 वर्ष या अधिक होना ज़रूरी है।']
+}[l];if(!HL)return;var els=document.querySelectorAll(l==='zh-TW'?'[data-l=zh]':'[data-l=en]');for(var i=0;i<els.length&&i<HL.length;i++)els[i].textContent=HL[i];})();</script>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>

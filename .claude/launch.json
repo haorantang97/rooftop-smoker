@@ -1,0 +1,40 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "smoke-3d",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "vite"
+      ],
+      "port": 5190
+    },
+    {
+      "name": "smoke-server",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "--watch",
+        "server.js"
+      ],
+      "port": 8790
+    },
+    {
+      "name": "recorder",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "scripts/recorder.mjs"
+      ],
+      "port": 5191
+    },
+    {
+      "name": "smoke-server-nobot",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "BOT=0",
+        "node",
+        "server.js"
+      ],
+      "port": 8790
+    }
+  ]
+}

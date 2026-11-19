@@ -1,0 +1,27 @@
+{
+  "name": "smoke-break",
+  "version": "0.1.0",
+  "private": true,
+  "description": "抽根烟：一个能看到彼此的在线虚拟吸烟角",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "server": "node --watch server.js",
+    "dev": "vite",
+    "build": "vite build",
+    "assets": "node scripts/fetch-assets.mjs",
+    "catalog": "node scripts/build-catalog.mjs",
+    "rec": "node scripts/recorder.mjs",
+    "release": "node scripts/release.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "three": "^0.170.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}

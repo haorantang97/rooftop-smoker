@@ -1,0 +1,4 @@
+cough1.mp3 / cough3.mp3 / coughfit.mp3：剪自 OpenGameArt「old man cough」，CC0 1.0
+https://opengameart.org/content/old-man-cough
+
+drag1-3.mp3（长吸一口）/ lung1-3.mp3（吸进肺里）/ exhale1-5.mp3（吐气）：项目自己录的（原文件在 sfx-src/）。处理：用 sfx-src/noise-1.wav 的底噪做谱减法降噪（底噪约再压 16 dB）、去首尾空白、切低频风噪、统一响度

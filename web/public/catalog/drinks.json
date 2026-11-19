@@ -1,0 +1,737 @@
+[
+  {
+    "id": "us-redribbon-classic-cola",
+    "name": "经典红罐可乐",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考可口可乐 红罐（Coca-Cola Classic 330ml）",
+    "kind": "soda",
+    "container": "can",
+    "volume_ml": 330,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#d61f26",
+      "secondary": "#ffffff"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "拉开拉环呲的一声气泡直冲鼻腔，冰镇第一口永远无可替代",
+    "type_zh": "可乐",
+    "images": {
+      "label": "drink/us-redribbon-classic-cola/label.png"
+    }
+  },
+  {
+    "id": "us-redribbon-zero-black",
+    "name": "无糖黑罐可乐",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考零度可乐 黑罐（Coca-Cola Zero Sugar 330ml）",
+    "kind": "soda",
+    "container": "can",
+    "volume_ml": 330,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#141416",
+      "secondary": "#d61f26"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "深夜怕甜腻又想听汽水呲拉声时的零负担黑罐",
+    "type_zh": "无糖可乐",
+    "images": {
+      "label": "drink/us-redribbon-zero-black/label.png"
+    }
+  },
+  {
+    "id": "us-blueroundel-pulse-cola",
+    "name": "蓝罐可乐",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考百事可乐 蓝罐（Pepsi 330ml）",
+    "kind": "soda",
+    "container": "can",
+    "volume_ml": 330,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#004b93",
+      "secondary": "#e32934"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "柑橘调更明亮清甜的电光蓝罐可乐，冰透了猛灌三大口",
+    "type_zh": "可乐",
+    "images": {
+      "label": "drink/us-blueroundel-pulse-cola/label.png"
+    }
+  },
+  {
+    "id": "us-greensplash-lime-soda",
+    "name": "柠檬青柠绿罐汽水",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考雪碧 绿罐（Sprite 330ml）",
+    "kind": "soda",
+    "container": "can",
+    "volume_ml": 330,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#008b47",
+      "secondary": "#f7e214"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "透心凉的透明柠檬青柠汽水，抽烟抽干了嗓子喝一口瞬间清润",
+    "type_zh": "柠檬汽水",
+    "images": {
+      "label": "drink/us-greensplash-lime-soda/label.png"
+    }
+  },
+  {
+    "id": "us-sunburst-orange-soda",
+    "name": "橙味汽水",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考芬达 橙味（Fanta Orange 330ml）",
+    "kind": "soda",
+    "container": "can",
+    "volume_ml": 330,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#ff7900",
+      "secondary": "#1e3a8a"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "欢快明亮的橘子汽水甜香，像把夏天的傍晚握在手里",
+    "type_zh": "橙味汽水",
+    "images": {
+      "label": "drink/us-sunburst-orange-soda/label.png"
+    }
+  },
+  {
+    "id": "us-crisplime-reddot-soda",
+    "name": "清爽白柠绿罐汽水",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考七喜（7UP 330ml 绿罐）",
+    "kind": "soda",
+    "container": "can",
+    "volume_ml": 330,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#009a49",
+      "secondary": "#e1251b"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "干干净净的柠檬苏打清香，气泡细密不甜腻",
+    "type_zh": "柠檬汽水",
+    "images": {
+      "label": "drink/us-crisplime-reddot-soda/label.png"
+    }
+  },
+  {
+    "id": "us-cragrush-neon-citrus",
+    "name": "荧光柑橘汽水",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考激浪（Mountain Dew 330ml）",
+    "kind": "soda",
+    "container": "can",
+    "volume_ml": 330,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#166534",
+      "secondary": "#a3e635"
+    },
+    "verb_zh": "灌一口",
+    "note_zh": "高咖啡因荧光柑橘汽水，通宵熬夜后的强心剂",
+    "type_zh": "柑橘汽水",
+    "images": {
+      "label": "drink/us-cragrush-neon-citrus/label.png"
+    }
+  },
+  {
+    "id": "us-cherryspice-maroon-soda",
+    "name": "樱桃香料汽水",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考胡椒博士（Dr Pepper 330ml）",
+    "kind": "soda",
+    "container": "can",
+    "volume_ml": 330,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#7a1628",
+      "secondary": "#ffffff"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "苦杏仁樱桃香草混在一起的奇妙草本可乐味，爱它的人戒不掉",
+    "type_zh": "樱桃汽水",
+    "images": {
+      "label": "drink/us-cherryspice-maroon-soda/label.png"
+    }
+  },
+  {
+    "id": "at-silvergrid-taurine-slim",
+    "name": "蓝银细罐牛磺酸能量饮料",
+    "country": "奥地利",
+    "country_code": "AT",
+    "inspiration": "参考红牛（Red Bull Energy Drink 250ml 蓝银格子细罐）",
+    "kind": "energy",
+    "container": "slimcan",
+    "volume_ml": 250,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#1b3f8f",
+      "secondary": "#c9ccd2"
+    },
+    "verb_zh": "灌一口",
+    "note_zh": "冰凉酸甜的牛磺酸维生素味，两口喝完精神陡然一振",
+    "type_zh": "能量饮料",
+    "images": {
+      "label": "drink/at-silvergrid-taurine-slim/label.png"
+    }
+  },
+  {
+    "id": "us-nightslash-neon-tallcan",
+    "name": "黑高罐荧光绿能量饮料",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考魔爪（Monster Energy 500ml 黑罐绿爪）",
+    "kind": "energy",
+    "container": "tallcan",
+    "volume_ml": 500,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#101012",
+      "secondary": "#7dff1f"
+    },
+    "verb_zh": "猛灌一口",
+    "note_zh": "五百毫升冰黑大罐荧光绿光，深夜街头最醒目的能量炸弹",
+    "type_zh": "能量饮料",
+    "images": {
+      "label": "drink/us-nightslash-neon-tallcan/label.png"
+    }
+  },
+  {
+    "id": "nl-amstelwind-green-lager",
+    "name": "绿瓶全麦拉格啤酒",
+    "country": "荷兰",
+    "country_code": "NL",
+    "inspiration": "参考喜力绿瓶啤酒（Heineken Lager 330ml）",
+    "kind": "beer",
+    "container": "green-bottle",
+    "volume_ml": 330,
+    "abv": 5.0,
+    "colors": {
+      "primary": "#15803d",
+      "secondary": "#ffffff"
+    },
+    "verb_zh": "吹一口",
+    "note_zh": "绿色长颈玻璃瓶凝满水珠，开盖一股标志性的清爽草本酒花香",
+    "type_zh": "啤酒",
+    "images": {
+      "label": "drink/nl-amstelwind-green-lager/label.png"
+    }
+  },
+  {
+    "id": "mx-bajamar-clear-cerveza",
+    "name": "墨西哥透明瓶清爽金啤",
+    "country": "墨西哥",
+    "country_code": "MX",
+    "inspiration": "参考科罗娜啤酒（Corona Extra 透明长颈瓶）",
+    "kind": "beer",
+    "container": "bottle",
+    "volume_ml": 330,
+    "abv": 4.5,
+    "colors": {
+      "primary": "#f8fafc",
+      "secondary": "#162d5c"
+    },
+    "verb_zh": "就着青柠喝",
+    "note_zh": "瓶口塞一角鲜青柠大拇指堵住颠倒一下，海风与夏夜的味道",
+    "type_zh": "啤酒",
+    "images": {
+      "label": "drink/mx-bajamar-clear-cerveza/label.png"
+    }
+  },
+  {
+    "id": "us-heartland-bowtie-redcan",
+    "name": "红白罐美式拉格啤酒",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考百威红罐啤酒（Budweiser King of Beers）",
+    "kind": "beer",
+    "container": "can",
+    "volume_ml": 355,
+    "abv": 5.0,
+    "colors": {
+      "primary": "#c81e24",
+      "secondary": "#ffffff"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "微甜顺滑的美式山毛榉木陈酿拉格，冰镇后毫无苦涩感",
+    "type_zh": "啤酒",
+    "images": {
+      "label": "drink/us-heartland-bowtie-redcan/label.png"
+    }
+  },
+  {
+    "id": "jp-ginryu-karakuchi-can",
+    "name": "银罐超辛口生啤",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考朝日超爽生啤（Asahi Super Dry 350ml 银罐）",
+    "kind": "beer",
+    "container": "can",
+    "volume_ml": 350,
+    "abv": 5.0,
+    "colors": {
+      "primary": "#cfd3d8",
+      "secondary": "#141518"
+    },
+    "verb_zh": "大口喝",
+    "note_zh": "利落干脆到极致，咽下去嘴里不留半点甜黏尾韵的日式超辛口",
+    "type_zh": "生啤",
+    "images": {
+      "label": "drink/jp-ginryu-karakuchi-can/label.png"
+    }
+  },
+  {
+    "id": "cn-huangdao-emerald-lager",
+    "name": "经典大绿罐拉格啤酒",
+    "country": "中国",
+    "country_code": "CN",
+    "inspiration": "参考青岛啤酒经典绿罐（Tsingtao Beer 500ml）",
+    "kind": "beer",
+    "container": "tallcan",
+    "volume_ml": 500,
+    "abv": 4.3,
+    "colors": {
+      "primary": "#157a46",
+      "secondary": "#d92626"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "麦香纯正爽口，大排档夜宵摊永远的主角绿大罐",
+    "type_zh": "啤酒",
+    "images": {
+      "label": "drink/cn-huangdao-emerald-lager/label.png"
+    }
+  },
+  {
+    "id": "be-leuven-chalice-lager",
+    "name": "比利时金边白标皮尔森啤酒",
+    "country": "比利时",
+    "country_code": "BE",
+    "inspiration": "参考时代啤酒（Stella Artois 330ml）",
+    "kind": "beer",
+    "container": "bottle",
+    "volume_ml": 330,
+    "abv": 5.0,
+    "colors": {
+      "primary": "#f8f5ec",
+      "secondary": "#c81e24"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "萨兹贵族酒花微苦优雅，金边红白标自带欧洲老酒馆仪式感",
+    "type_zh": "啤酒",
+    "images": {
+      "label": "drink/be-leuven-chalice-lager/label.png"
+    }
+  },
+  {
+    "id": "ie-dublin-velvet-stout",
+    "name": "爱尔兰氮气绵泡黑啤",
+    "country": "爱尔兰",
+    "country_code": "IE",
+    "inspiration": "参考健力士黑啤（Guinness Draught Stout 440ml 黑罐）",
+    "kind": "beer",
+    "container": "tallcan",
+    "volume_ml": 440,
+    "abv": 4.2,
+    "colors": {
+      "primary": "#121214",
+      "secondary": "#dfc07c"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "拉开拉环罐内氮气球哗啦作响，涌出奶油般绵密泡沫与烘烤咖啡香",
+    "type_zh": "黑啤",
+    "images": {
+      "label": "drink/ie-dublin-velvet-stout/label.png"
+    }
+  },
+  {
+    "id": "dk-nordhavn-hop-greencan",
+    "name": "丹麦绿罐纯麦皮尔森啤酒",
+    "country": "丹麦",
+    "country_code": "DK",
+    "inspiration": "参考嘉士伯绿罐啤酒（Carlsberg Danish Pilsner）",
+    "kind": "beer",
+    "container": "can",
+    "volume_ml": 330,
+    "abv": 5.0,
+    "colors": {
+      "primary": "#146c43",
+      "secondary": "#ffffff"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "均衡清爽的北欧全麦皮尔森，绿底白花体字一眼清爽",
+    "type_zh": "啤酒",
+    "images": {
+      "label": "drink/dk-nordhavn-hop-greencan/label.png"
+    }
+  },
+  {
+    "id": "jp-kinho-firstpress-gold",
+    "name": "头道麦汁全麦生啤",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考麒麟一番榨生啤（Kirin Ichiban 350ml）",
+    "kind": "beer",
+    "container": "can",
+    "volume_ml": 350,
+    "abv": 5.0,
+    "colors": {
+      "primary": "#f5eedc",
+      "secondary": "#d4a43c"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "只取第一道麦芽汁酿造，浓醇温润没有二道麦皮杂涩味",
+    "type_zh": "生啤",
+    "images": {
+      "label": "drink/jp-kinho-firstpress-gold/label.png"
+    }
+  },
+  {
+    "id": "kr-cheongsu-fresh-soju",
+    "name": "韩国竹炭过滤绿瓶烧酒",
+    "country": "韩国",
+    "country_code": "KR",
+    "inspiration": "参考真露原味绿瓶烧酒（Jinro Chamisul Fresh 참이슬）",
+    "kind": "soju",
+    "container": "green-bottle",
+    "volume_ml": 360,
+    "abv": 16.5,
+    "colors": {
+      "primary": "#f4fbf6",
+      "secondary": "#15803d"
+    },
+    "verb_zh": "抿一口",
+    "note_zh": "冰透了微甜顺喉，一个人对月小酌半瓶刚好微醺",
+    "type_zh": "烧酒",
+    "images": {
+      "label": "drink/kr-cheongsu-fresh-soju/label.png"
+    }
+  },
+  {
+    "id": "us-oldhollow-blacklabel-whiskey",
+    "name": "方瓶黑标田纳西威士忌",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考杰克丹尼黑标方瓶威士忌（Jack Daniel's Old No.7）",
+    "kind": "spirit",
+    "container": "stubby",
+    "volume_ml": 200,
+    "abv": 40.0,
+    "colors": {
+      "primary": "#141414",
+      "secondary": "#f5f5f0"
+    },
+    "verb_zh": "抿一口",
+    "note_zh": "四十度枫糖烟熏橡木桶烈香，拧开小黑盖直接对嘴抿一口",
+    "type_zh": "威士忌",
+    "images": {
+      "label": "drink/us-oldhollow-blacklabel-whiskey/label.png"
+    }
+  },
+  {
+    "id": "gb-highlandglen-slanted-scotch",
+    "name": "十二年黑方苏格兰威士忌",
+    "country": "英国",
+    "country_code": "GB",
+    "inspiration": "参考尊尼获加黑牌威士忌（Johnnie Walker Black Label 12年黑方）",
+    "kind": "spirit",
+    "container": "stubby",
+    "volume_ml": 200,
+    "abv": 40.0,
+    "colors": {
+      "primary": "#141416",
+      "secondary": "#d4af55"
+    },
+    "verb_zh": "轻抿一口",
+    "note_zh": "淡淡泥煤烟熏混着干果香草，斜贴黑金标一眼就是老派苏威",
+    "type_zh": "威士忌",
+    "images": {
+      "label": "drink/gb-highlandglen-slanted-scotch/label.png"
+    }
+  },
+  {
+    "id": "gb-frostpeak-citrus-ice",
+    "name": "柠檬伏特加预调冰酒",
+    "country": "英国",
+    "country_code": "GB",
+    "inspiration": "参考斯米诺冰纯（Smirnoff Ice 275ml）",
+    "kind": "highball",
+    "container": "bottle",
+    "volume_ml": 275,
+    "abv": 4.5,
+    "colors": {
+      "primary": "#e5e7eb",
+      "secondary": "#dc2626"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "像带气的酸甜柠檬汽水却藏着四度半伏特加微醺",
+    "type_zh": "预调酒",
+    "images": {
+      "label": "drink/gb-frostpeak-citrus-ice/label.png"
+    }
+  },
+  {
+    "id": "gb-sunleaf-lemon-icedtea",
+    "name": "阳光鲜柠冰红茶",
+    "country": "英国",
+    "country_code": "GB",
+    "inspiration": "参考立顿柠檬冰红茶（Lipton Lemon Ice Tea）",
+    "kind": "tea",
+    "container": "pet",
+    "volume_ml": 500,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#facc15",
+      "secondary": "#dc2626"
+    },
+    "verb_zh": "大口喝",
+    "note_zh": "酸酸甜甜冰凉解渴的柠檬红茶，夏天一口气能炫半瓶",
+    "type_zh": "冰红茶",
+    "images": {
+      "label": "drink/gb-sunleaf-lemon-icedtea/label.png"
+    }
+  },
+  {
+    "id": "us-sonorabloom-ginseng-tallcan",
+    "name": "樱花大高罐蜂蜜人参绿茶",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考亚利桑那绿茶大高罐（AriZona Green Tea with Ginseng & Honey 680ml）",
+    "kind": "tea",
+    "container": "tallcan",
+    "volume_ml": 680,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#8fd3c1",
+      "secondary": "#f472b6"
+    },
+    "verb_zh": "捧着喝",
+    "note_zh": "便利店冷柜里个头最大颜值最高的一罐清甜蜂蜜绿茶",
+    "type_zh": "绿茶",
+    "images": {
+      "label": "drink/us-sonorabloom-ginseng-tallcan/label.png"
+    }
+  },
+  {
+    "id": "jp-shiosai-ion-supply",
+    "name": "蓝白电解质补充饮料",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考宝矿力水特（Pocari Sweat 500ml）",
+    "kind": "water",
+    "container": "pet",
+    "volume_ml": 500,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#1d6fd8",
+      "secondary": "#ffffff"
+    },
+    "verb_zh": "猛喝几口",
+    "note_zh": "宿醉或者抽多了烟口干舌燥时，这一瓶微咸西柚味电解质水简直救命",
+    "type_zh": "电解质水",
+    "images": {
+      "label": "drink/jp-shiosai-ion-supply/label.png"
+    }
+  },
+  {
+    "id": "us-voltstride-orange-sport",
+    "name": "亮橙闪电运动补水饮料",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考佳得乐橙味运动饮料（Gatorade Orange Thirst Quencher）",
+    "kind": "water",
+    "container": "pet",
+    "volume_ml": 591,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#f97316",
+      "secondary": "#15803d"
+    },
+    "verb_zh": "仰头喝",
+    "note_zh": "畅快解渴的橙味运动饮料，拧开宽口大盖吨吨直灌",
+    "type_zh": "运动饮料",
+    "images": {
+      "label": "drink/us-voltstride-orange-sport/label.png"
+    }
+  },
+  {
+    "id": "fr-montclair-alpine-water",
+    "name": "阿尔卑斯粉标天然矿泉水",
+    "country": "法国",
+    "country_code": "FR",
+    "inspiration": "参考依云天然矿泉水（evian Natural Mineral Water）",
+    "kind": "water",
+    "container": "pet",
+    "volume_ml": 500,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#f8fbfd",
+      "secondary": "#f4a6b8"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "清冽甘甜的雪山冰川水，粉白雪山小标干净得像山间空气",
+    "type_zh": "矿泉水",
+    "images": {
+      "label": "drink/fr-montclair-alpine-water/label.png"
+    }
+  },
+  {
+    "id": "us-cascadia-mocha-glasscoffee",
+    "name": "玻璃瓶冰摩卡咖啡",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考星巴克瓶装星冰乐摩卡味（Starbucks Frappuccino Mocha 281ml）",
+    "kind": "coffee",
+    "container": "bottle",
+    "volume_ml": 281,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#d6bc94",
+      "secondary": "#14532d"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "玻璃圆瓶拧开金属盖啵的一声，浓滑甜润的冰镇摩卡奶咖",
+    "type_zh": "冰咖啡",
+    "images": {
+      "label": "drink/us-cascadia-mocha-glasscoffee/label.png"
+    }
+  },
+  {
+    "id": "jp-asama-shortcan-coffee",
+    "name": "自动贩卖机金棕矮罐咖啡",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考日本 Georgia 罐装咖啡（Georgia Emerald Mountain / Original 185g 矮罐）",
+    "kind": "coffee",
+    "container": "shortcan",
+    "volume_ml": 185,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#6b3e26",
+      "secondary": "#eab308"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "街角贩卖机掉下来沉甸甸的小矮铁罐，配第一根烟的灵魂搭档",
+    "type_zh": "罐装咖啡",
+    "images": {
+      "label": "drink/jp-asama-shortcan-coffee/label.png"
+    }
+  },
+  {
+    "id": "jp-ujikaze-unsweet-greentea",
+    "name": "日式无糖鲜泡绿茶",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考伊藤园绿茶（Ito En Oi Ocha お〜いお茶 525ml）",
+    "kind": "tea",
+    "container": "pet",
+    "volume_ml": 525,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#2f8a42",
+      "secondary": "#e8f2d8"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "零糖零香精的纯正煎茶微涩回甘，最解油腻与烟燥",
+    "type_zh": "绿茶",
+    "images": {
+      "label": "drink/jp-ujikaze-unsweet-greentea/label.png"
+    }
+  },
+  {
+    "id": "cn-lingnan-herbal-redcan",
+    "name": "红罐草本植物凉茶",
+    "country": "中国",
+    "country_code": "CN",
+    "inspiration": "参考王老吉红罐凉茶（Wanglaoji Herbal Tea 310ml）",
+    "kind": "tea",
+    "container": "can",
+    "volume_ml": 310,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#c81e24",
+      "secondary": "#facc15"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "仙草鸡蛋花甘草熬出的清甜草本凉茶，熬夜抽烟怕上火先开一罐",
+    "type_zh": "凉茶",
+    "images": {
+      "label": "drink/cn-lingnan-herbal-redcan/label.png"
+    }
+  },
+  {
+    "id": "cn-qianhu-redcap-spring",
+    "name": "红标天然饮用水",
+    "country": "中国",
+    "country_code": "CN",
+    "inspiration": "参考农夫山泉饮用天然水（Nongfu Spring 550ml 红标）",
+    "kind": "water",
+    "container": "pet",
+    "volume_ml": 550,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#d92626",
+      "secondary": "#ffffff"
+    },
+    "verb_zh": "喝一口",
+    "note_zh": "全中国便利店最眼熟的一抹红瓶标，清澈微甜的山泉水",
+    "type_zh": "矿泉水",
+    "images": {
+      "label": "drink/cn-qianhu-redcap-spring/label.png"
+    }
+  },
+  {
+    "id": "jp-makiba-probiotic-mini",
+    "name": "百亿活性乳酸菌小瓶饮",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考养乐多活菌型乳酸菌乳饮品（Yakult 100ml）",
+    "kind": "milk",
+    "container": "pet",
+    "volume_ml": 100,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#f5ead6",
+      "secondary": "#dc2626"
+    },
+    "verb_zh": "一口闷",
+    "note_zh": "拇指大的一小瓶酸甜乳酸菌，撕开红铝箔盖两口就见底却意犹未尽",
+    "type_zh": "乳酸菌",
+    "images": {
+      "label": "drink/jp-makiba-probiotic-mini/label.png"
+    }
+  },
+  {
+    "id": "cn-harborview-lemon-carton",
+    "name": "港式真茶真柠檬纸盒装",
+    "country": "中国香港",
+    "country_code": "HK",
+    "inspiration": "参考维他柠檬茶纸盒装（Vita Lemon Tea VLT 250ml）",
+    "kind": "tea",
+    "container": "carton",
+    "volume_ml": 250,
+    "abv": 0.0,
+    "colors": {
+      "primary": "#f59e0b",
+      "secondary": "#fde047"
+    },
+    "verb_zh": "插吸管吸一口",
+    "note_zh": "涩得够劲又酸甜上头的港式锡兰柠檬茶，吸完还要把纸盒吸瘪",
+    "type_zh": "柠檬茶",
+    "images": {
+      "label": "drink/cn-harborview-lemon-carton/label.png"
+    }
+  }
+]

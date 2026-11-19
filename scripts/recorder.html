@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>抽烟录音</title>
+<style>
+  :root { --bg: #0e0f14; --panel: #171922; --line: #2a2d3a; --text: #e9e7e2; --muted: #8d8a96; --ember: #ff7a35; --ok: #5ad19a; --bad: #ff5a5a; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.5 -apple-system, "PingFang SC", system-ui, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 120px; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 18px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; margin-bottom: 12px; }
+  #mic { display: flex; align-items: center; gap: 14px; }
+  #mic button { flex: none; }
+  .meter { flex: 1; height: 12px; background: #0a0b10; border-radius: 6px; overflow: hidden; position: relative; }
+  .meter i { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--ok); transition: width .05s; }
+  .meter.hot i { background: var(--bad); }
+  #db { width: 64px; text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); }
+  button { font: inherit; color: var(--text); background: #232634; border: 1px solid var(--line); border-radius: 10px; padding: 7px 14px; cursor: pointer; }
+  button:hover { background: #2b2f40; }
+  button.primary { background: var(--ember); border-color: var(--ember); color: #1a0d05; font-weight: 600; }
+  button:disabled { opacity: .4; cursor: default; }
+  h2 { font-size: 15px; margin: 0; }
+  .hint { color: var(--muted); font-size: 13px; margin: 2px 0 10px; }
+  .slot { display: grid; grid-template-columns: 92px 1fr auto; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 10px; border: 1px solid transparent; cursor: pointer; }
+  .slot + .slot { margin-top: 4px; }
+  .slot.cur { border-color: var(--ember); background: rgba(255,122,53,.06); }
+  .slot .nm { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .slot.done .nm { color: var(--ok); }
+  .slot canvas { width: 100%; height: 34px; display: block; background: #0f1017; border-radius: 6px; }
+  .slot .acts { display: flex; gap: 6px; }
+  .slot .acts button { padding: 5px 10px; font-size: 13px; }
+  .slot.rec { border-color: var(--bad); background: rgba(255,90,90,.08); }
+  #bar { position: fixed; left: 0; right: 0; bottom: 0; background: rgba(14,15,20,.94); border-top: 1px solid var(--line); backdrop-filter: blur(8px); }
+  #bar div { max-width: 760px; margin: 0 auto; padding: 12px 16px; display: flex; align-items: center; gap: 14px; }
+  #big { font-size: 26px; font-weight: 700; font-variant-numeric: tabular-nums; width: 90px; }
+  #status { flex: 1; color: var(--muted); }
+  #recBtn { min-width: 150px; height: 44px; font-size: 15px; }
+  #recBtn.on { background: var(--bad); border-color: var(--bad); color: #fff; }
+  #progress { color: var(--muted); font-variant-numeric: tabular-nums; }
+  @media (max-width: 560px) { .slot { grid-template-columns: 70px 1fr; } .slot .acts { grid-column: 1 / -1; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>抽烟录音</h1>
+  <p class="sub">按顺序录，每条录完自动存进项目的 sfx-src/。选中一条后，按住空格录、松开停（和游戏里按住吸一口一样），也可以点下面的按钮。</p>
+
+  <div class="card" id="mic">
+    <button id="micBtn" class="primary">打开麦克风</button>
+    <div class="meter" id="meter"><i></i></div>
+    <span id="db">—</span>
+  </div>
+  <p class="hint" id="micHint">手机或电脑麦克风都行。放在嘴前方 20–30 厘米、稍微偏下，别正对着嘴吹。已经关掉浏览器自带的降噪 / 回声消除 / 自动增益，录的是原声。电平条平时在左边一点点、吸气时到一半左右最好，变红说明太近或太响。</p>
+
+  <div id="list"></div>
+</main>
+
+<div id="bar"><div>
+  <span id="big">0.0s</span>
+  <span id="status">先打开麦克风</span>
+  <span id="progress"></span>
+  <button id="recBtn" class="primary" disabled>按住空格 / 点这里录</button>
+</div></div>
+
+<script>
+const GROUPS = [
+  { key: 'noise', title: '环境底噪', n: 1, hint: '什么都不做，安静 3 秒。用来给后面的录音降噪。' },
+  { key: 'inhale-long', title: '长吸 3–4 秒', n: 5, hint: '嘬着过滤嘴持续、均匀地吸满一口，越长越好，中途别换气。最重要的一条。' },
+  { key: 'inhale-short', title: '短吸 1 秒左右', n: 3, hint: '轻轻嘬一下。' },
+  { key: 'lung', title: '吸进肺里', n: 3, hint: '嘬完松开嘴，「嘶」地把烟吸进肺里那一下，0.5–1 秒。' },
+  { key: 'exhale', title: '吐气', n: 5, hint: '轻轻「呼——」，长短各几遍，1 秒到 3 秒，别太用力。' },
+  { key: 'full', title: '完整一口（可选）', n: 3, hint: '吸 → 吸进肺 → 停半秒 → 吐，按你平时真实的节奏。' },
+];
+const slots = []; for (const g of GROUPS) for (let i = 1; i <= g.n; i++) slots.push({ name: `${g.key}-${i}`, group: g, i, done: false, dur: 0 });
+const $ = (s, r = document) => r.querySelector(s);
+let cur = 0, ac = null, src = null, node = null, analyser = null, recording = false, chunks = [], pre = [], preLen = 0, startT = 0, player = null;
+const PRE_SEC = 0.3; // 开始前多留 0.3 秒，按晚了也不会切掉开头
+
+// ---------- 列表 ----------
+function render() {
+  const box = $('#list'); box.innerHTML = '';
+  for (const g of GROUPS) {
+    const card = document.createElement('div'); card.className = 'card';
+    card.innerHTML = `<h2>${g.title}</h2><p class="hint">${g.hint}</p>`;
+    slots.filter((s) => s.group === g).forEach((s) => {
+      const idx = slots.indexOf(s), el = document.createElement('div');
+      el.className = 'slot' + (idx === cur ? ' cur' : '') + (s.done ? ' done' : '') + (recording && idx === cur ? ' rec' : '');
+      el.innerHTML = `<span class="nm">${s.done ? '✓' : '○'} 第 ${s.i} 遍${s.done ? ` · ${s.dur.toFixed(1)}s` : ''}</span><canvas width="600" height="68"></canvas><span class="acts"><button data-a="play" ${s.done ? '' : 'disabled'}>听</button><button data-a="redo" ${s.done ? '' : 'disabled'}>重录</button></span>`;
+      el.addEventListener('click', (e) => {
+        const a = e.target.closest('button')?.dataset.a;
+        if (recording) return;
+        if (a === 'play') return play(s);
+        cur = idx; if (a === 'redo') { fetch(`/delete?name=${s.name}`, { method: 'POST' }); s.done = false; s.wave = null; }
+        render();
+      });
+      card.appendChild(el);
+      if (s.wave) drawWave(el.querySelector('canvas'), s.wave);
+    });
+    box.appendChild(card);
+  }
+  const done = slots.filter((s) => s.done).length;
+  $('#progress').textContent = `${done} / ${slots.length}`;
+  const s = slots[cur];
+  if (!recording && ac) $('#status').textContent = s ? `下一条：${s.group.title} · 第 ${s.i} 遍` : '都录完了，回去跟 Claude 说一声';
+}
+function drawWave(cv, peaks) {
+  const g = cv.getContext('2d'), W = cv.width, H = cv.height; g.clearRect(0, 0, W, H); g.fillStyle = '#ff7a35';
+  for (let i = 0; i < W; i++) { const p = peaks[Math.floor(i / W * peaks.length)] || 0, h = Math.max(1, p * H); g.fillRect(i, (H - h) / 2, 1, h); }
+}
+function peaksOf(data, n = 300) { const out = [], step = Math.max(1, Math.floor(data.length / n)); let mx = 0; for (let i = 0; i < data.length; i += step) { let m = 0; for (let j = i; j < Math.min(i + step, data.length); j++) m = Math.max(m, Math.abs(data[j])); out.push(m); mx = Math.max(mx, m); } return out.map((v) => v / (mx || 1)); }
+
+// ---------- 麦克风 ----------
+$('#micBtn').addEventListener('click', async () => {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false, channelCount: 1 } });
+    ac = new AudioContext(); src = ac.createMediaStreamSource(stream);
+    analyser = ac.createAnalyser(); analyser.fftSize = 2048; src.connect(analyser);
+    const code = `class Tap extends AudioWorkletProcessor { process(i) { const c = i[0] && i[0][0]; if (c) this.port.postMessage(c.slice(0)); return true; } } registerProcessor('tap', Tap);`;
+    await ac.audioWorklet.addModule(URL.createObjectURL(new Blob([code], { type: 'application/javascript' })));
+    node = new AudioWorkletNode(ac, 'tap'); src.connect(node);
+    node.port.onmessage = (e) => {
+      const f = e.data;
+      if (recording) chunks.push(f);
+      else { pre.push(f); preLen += f.length; while (pre.length && preLen - pre[0].length > PRE_SEC * ac.sampleRate) preLen -= pre.shift().length; }
+    };
+    $('#micBtn').textContent = '麦克风已打开'; $('#micBtn').disabled = true; $('#recBtn').disabled = false;
+    meterLoop(); render();
+  } catch (err) { $('#status').textContent = '打不开麦克风：' + err.message + '（请在浏览器里允许麦克风）'; }
+});
+function meterLoop() {
+  const buf = new Float32Array(analyser.fftSize);
+  const tick = () => {
+    analyser.getFloatTimeDomainData(buf); let s = 0, pk = 0; for (const v of buf) { s += v * v; pk = Math.max(pk, Math.abs(v)); }
+    const db = 20 * Math.log10(Math.sqrt(s / buf.length) || 1e-6), pct = Math.max(0, Math.min(100, (db + 70) / 70 * 100));
+    $('#meter i').style.width = pct + '%'; $('#meter').classList.toggle('hot', pk > 0.95); $('#db').textContent = db > -90 ? db.toFixed(0) + ' dB' : '—';
+    if (recording) $('#big').textContent = ((performance.now() - startT) / 1000).toFixed(1) + 's';
+    requestAnimationFrame(tick);
+  };
+  tick();
+}
+
+// ---------- 录 ----------
+function start() {
+  if (!ac || recording || !slots[cur]) return;
+  ac.resume(); player?.pause();
+  chunks = pre.slice(); recording = true; startT = performance.now();
+  $('#recBtn').classList.add('on'); $('#recBtn').textContent = '录音中…松开 / 再点停';
+  $('#status').textContent = `正在录：${slots[cur].group.title} · 第 ${slots[cur].i} 遍`; render();
+}
+async function stop() {
+  if (!recording) return;
+  recording = false; $('#recBtn').classList.remove('on'); $('#recBtn').textContent = '按住空格 / 点这里录';
+  await new Promise((r) => setTimeout(r, 120)); // 收尾多录一点点
+  const len = chunks.reduce((n, c) => n + c.length, 0), data = new Float32Array(len); let o = 0; for (const c of chunks) { data.set(c, o); o += c.length; }
+  const s = slots[cur], dur = len / ac.sampleRate;
+  if (dur < 0.4) { $('#status').textContent = '太短了，再录一次'; render(); return; }
+  $('#status').textContent = '保存中…';
+  const r = await fetch(`/save?name=${s.name}`, { method: 'POST', body: wav(data, ac.sampleRate) });
+  if (!r.ok) { $('#status').textContent = '保存失败：' + r.status; return; }
+  s.done = true; s.dur = dur; s.wave = peaksOf(data);
+  const next = slots.findIndex((x, i) => i > cur && !x.done); cur = next >= 0 ? next : slots.findIndex((x) => !x.done); if (cur < 0) cur = slots.length;
+  render();
+}
+function wav(data, sr) {
+  const b = new ArrayBuffer(44 + data.length * 2), v = new DataView(b), w = (o, s) => [...s].forEach((c, i) => v.setUint8(o + i, c.charCodeAt(0)));
+  w(0, 'RIFF'); v.setUint32(4, 36 + data.length * 2, true); w(8, 'WAVE'); w(12, 'fmt '); v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 1, true);
+  v.setUint32(24, sr, true); v.setUint32(28, sr * 2, true); v.setUint16(32, 2, true); v.setUint16(34, 16, true); w(36, 'data'); v.setUint32(40, data.length * 2, true);
+  for (let i = 0; i < data.length; i++) v.setInt16(44 + i * 2, Math.max(-1, Math.min(1, data[i])) * 0x7fff, true);
+  return new Blob([b], { type: 'audio/wav' });
+}
+function play(s) { player?.pause(); player = new Audio(`/file?name=${s.name}&t=${Date.now()}`); player.play(); }
+
+$('#recBtn').addEventListener('click', () => (recording ? stop() : start()));
+addEventListener('keydown', (e) => { if (e.code === 'Space') { e.preventDefault(); if (!e.repeat) start(); } });
+addEventListener('keyup', (e) => { if (e.code === 'Space') { e.preventDefault(); stop(); } });
+
+// 刷新页面后接着录：标出已经存过的
+fetch('/list').then((r) => r.json()).then((files) => {
+  for (const f of files) { const s = slots.find((x) => x.name === f.name); if (s) { s.done = true; s.dur = Math.max(0, (f.size - 44) / 2 / 48000); } }
+  const n = slots.findIndex((x) => !x.done); cur = n >= 0 ? n : slots.length; render();
+});
+render();
+</script>
+</body>
+</html>

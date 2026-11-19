@@ -1,0 +1,2682 @@
+[
+  {
+    "id": "us-sunribbon-classic-chips",
+    "name": "经典原味薄切薯片",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考乐事 原味薯片（Lay's Classic 黄袋红飘带）",
+    "kind": "chips",
+    "package": "bag",
+    "size_mm": [
+      165,
+      235,
+      55
+    ],
+    "colors": {
+      "primary": "#ffd21f",
+      "secondary": "#d8262c"
+    },
+    "verb_zh": "倒一口",
+    "note_zh": "撕开满袋咸香土豆味，薄得透光咔嚓脆",
+    "type_zh": "薯片",
+    "images": {
+      "front": "snack/us-sunribbon-classic-chips/front.png"
+    }
+  },
+  {
+    "id": "us-redtube-saddle-crisps",
+    "name": "红筒原味叠片薯片",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考品客 原味薯片（Pringles Original 红色长筒）",
+    "kind": "chips",
+    "package": "tin",
+    "size_mm": [
+      76,
+      235,
+      76
+    ],
+    "colors": {
+      "primary": "#d8262c",
+      "secondary": "#f5cb42"
+    },
+    "verb_zh": "拿一片",
+    "note_zh": "整整齐齐码在红筒里的马鞍形脆片，手伸到底会卡住",
+    "type_zh": "薯片",
+    "images": {
+      "front": "snack/us-redtube-saddle-crisps/front.png"
+    }
+  },
+  {
+    "id": "us-embertri-nacho-corn",
+    "name": "超浓芝士三角玉米片",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考多力多滋 超浓芝士（Doritos Nacho Cheese 黑红袋）",
+    "kind": "chips",
+    "package": "bag",
+    "size_mm": [
+      170,
+      240,
+      58
+    ],
+    "colors": {
+      "primary": "#18181b",
+      "secondary": "#ea3e18"
+    },
+    "verb_zh": "倒一口",
+    "note_zh": "吃完手指头一定会沾满浓浓的橙色芝士粉",
+    "type_zh": "玉米片",
+    "images": {
+      "front": "snack/us-embertri-nacho-corn/front.png"
+    }
+  },
+  {
+    "id": "us-crunchcurl-cheese-puffs",
+    "name": "香浓芝士玉米脆条",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考奇多 脆条（Cheetos Crunchy 橙袋）",
+    "kind": "chips",
+    "package": "bag",
+    "size_mm": [
+      160,
+      230,
+      55
+    ],
+    "colors": {
+      "primary": "#f97316",
+      "secondary": "#fde047"
+    },
+    "verb_zh": "倒一口",
+    "note_zh": "嘎嘣脆的橙色疙瘩玉米条，满嘴浓郁切达芝士味",
+    "type_zh": "芝士条",
+    "images": {
+      "front": "snack/us-crunchcurl-cheese-puffs/front.png"
+    }
+  },
+  {
+    "id": "us-cobaltcream-cocoa-cookies",
+    "name": "原味香草夹心黑巧饼干",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考奥利奥 原味夹心饼干（Oreo Original 蓝色长条装）",
+    "kind": "cookies",
+    "package": "box",
+    "size_mm": [
+      56,
+      178,
+      50
+    ],
+    "colors": {
+      "primary": "#1d4ed8",
+      "secondary": "#ffffff"
+    },
+    "verb_zh": "拿一块",
+    "note_zh": "扭一扭舔一舔，微苦黑可可饼干配甜香草夹心",
+    "type_zh": "夹心饼干",
+    "images": {
+      "front": "snack/us-cobaltcream-cocoa-cookies/front.png"
+    }
+  },
+  {
+    "id": "gb-redoval-fourfinger-wafer",
+    "name": "四指脆威化牛奶巧克力",
+    "country": "英国",
+    "country_code": "GB",
+    "inspiration": "参考奇巧四指威化巧克力（KitKat 4-Finger 红包装）",
+    "kind": "chocolate",
+    "package": "bar",
+    "size_mm": [
+      96,
+      68,
+      12
+    ],
+    "colors": {
+      "primary": "#d6202a",
+      "secondary": "#ffffff"
+    },
+    "verb_zh": "掰一条",
+    "note_zh": "咔嚓一声沿着凹槽掰下一根，酥脆威化裹满牛奶巧克力",
+    "type_zh": "威化",
+    "images": {
+      "front": "snack/gb-redoval-fourfinger-wafer/front.png"
+    }
+  },
+  {
+    "id": "us-caramelnut-brown-bar",
+    "name": "花生焦糖牛轧巧克力棒",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考士力架花生巧克力棒（Snickers Bar）",
+    "kind": "chocolate",
+    "package": "bar",
+    "size_mm": [
+      118,
+      40,
+      20
+    ],
+    "colors": {
+      "primary": "#4a2515",
+      "secondary": "#1d4ed8"
+    },
+    "verb_zh": "咬一口",
+    "note_zh": "饿得发慌时咬一大口，拉丝焦糖裹满香脆烤花生仁",
+    "type_zh": "巧克力棒",
+    "images": {
+      "front": "snack/us-caramelnut-brown-bar/front.png"
+    }
+  },
+  {
+    "id": "us-sunbeans-milk-lentils",
+    "name": "脆壳牛奶巧克力彩豆",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考M&M's 牛奶巧克力豆（黄袋彩豆装）",
+    "kind": "chocolate",
+    "package": "pouch",
+    "size_mm": [
+      110,
+      155,
+      30
+    ],
+    "colors": {
+      "primary": "#ffd21f",
+      "secondary": "#4e2a18"
+    },
+    "verb_zh": "倒一口",
+    "note_zh": "脆脆的彩色糖壳咬开是丝滑牛奶巧克力，只融在口不融在手",
+    "type_zh": "巧克力豆",
+    "images": {
+      "front": "snack/us-sunbeans-milk-lentils/front.png"
+    }
+  },
+  {
+    "id": "us-sunbeans-peanut-lentils",
+    "name": "脆壳整粒花生巧克力豆",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考M&M's 花生牛奶巧克力豆（M&M's Peanut 黄袋）",
+    "kind": "chocolate",
+    "package": "pouch",
+    "size_mm": [
+      118,
+      165,
+      36
+    ],
+    "colors": {
+      "primary": "#f5b81c",
+      "secondary": "#5c2d16"
+    },
+    "verb_zh": "倒一口",
+    "note_zh": "大颗椭圆彩糖壳里藏着整粒香脆烤花生，越嚼越香",
+    "type_zh": "巧克力豆",
+    "images": {
+      "front": "snack/us-sunbeans-peanut-lentils/front.png"
+    }
+  },
+  {
+    "id": "gb-goldtwin-caramel-biscuit",
+    "name": "焦糖曲奇双条巧克力",
+    "country": "英国",
+    "country_code": "GB",
+    "inspiration": "参考特趣双条焦糖饼干巧克力（Twix 金色包装）",
+    "kind": "chocolate",
+    "package": "bar",
+    "size_mm": [
+      115,
+      50,
+      16
+    ],
+    "colors": {
+      "primary": "#e5be58",
+      "secondary": "#c81e24"
+    },
+    "verb_zh": "咬一口",
+    "note_zh": "一袋两根，松脆曲奇底铺满厚焦糖再淋一层牛奶巧克力",
+    "type_zh": "巧克力棒",
+    "images": {
+      "front": "snack/gb-goldtwin-caramel-biscuit/front.png"
+    }
+  },
+  {
+    "id": "gb-jetnougat-redscript-bar",
+    "name": "焦糖软牛轧黑包装巧克力棒",
+    "country": "英国",
+    "country_code": "GB",
+    "inspiration": "参考玛氏巧克力棒（Mars Bar 黑包装红字）",
+    "kind": "chocolate",
+    "package": "bar",
+    "size_mm": [
+      112,
+      38,
+      19
+    ],
+    "colors": {
+      "primary": "#141416",
+      "secondary": "#dc2626"
+    },
+    "verb_zh": "咬一口",
+    "note_zh": "不加坚果的纯粹绵密牛轧糖与浓郁焦糖，甜得酣畅淋漓",
+    "type_zh": "巧克力棒",
+    "images": {
+      "front": "snack/gb-jetnougat-redscript-bar/front.png"
+    }
+  },
+  {
+    "id": "jp-redbox-choco-sticks",
+    "name": "红盒巧克力涂层饼干棒",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考格力高百奇巧克力棒（Glico Pocky Chocolate 红盒）",
+    "kind": "cookies",
+    "package": "box",
+    "size_mm": [
+      72,
+      152,
+      18
+    ],
+    "colors": {
+      "primary": "#dc2626",
+      "secondary": "#ffffff"
+    },
+    "verb_zh": "抽一根",
+    "note_zh": "捏着没沾巧克力的饼干尾巴一根接一根咔嚓咬",
+    "type_zh": "饼干棒",
+    "images": {
+      "front": "snack/jp-redbox-choco-sticks/front.png"
+    }
+  },
+  {
+    "id": "jp-pinkbox-berry-sticks",
+    "name": "粉盒草莓果粒饼干棒",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考格力高百奇草莓棒（Glico Pocky Strawberry 粉盒）",
+    "kind": "cookies",
+    "package": "box",
+    "size_mm": [
+      72,
+      152,
+      18
+    ],
+    "colors": {
+      "primary": "#f472b6",
+      "secondary": "#be123c"
+    },
+    "verb_zh": "抽一根",
+    "note_zh": "掀开内袋就是酸甜草莓奶香，粉粉的涂层里还有碎果粒",
+    "type_zh": "饼干棒",
+    "images": {
+      "front": "snack/jp-pinkbox-berry-sticks/front.png"
+    }
+  },
+  {
+    "id": "ch-honeyprism-almond-choc",
+    "name": "蜂蜜巴旦木三角牛奶巧克力",
+    "country": "瑞士",
+    "country_code": "CH",
+    "inspiration": "参考瑞士三角牛奶巧克力（Toblerone Honey & Almond Nougat）",
+    "kind": "chocolate",
+    "package": "box",
+    "size_mm": [
+      205,
+      42,
+      38
+    ],
+    "colors": {
+      "primary": "#f3ca4d",
+      "secondary": "#b91c1c"
+    },
+    "verb_zh": "掰一块",
+    "note_zh": "顺着三角峰咔哒掰下一座小山，蜂蜜杏仁牛轧碎黏牙又香甜",
+    "type_zh": "巧克力",
+    "images": {
+      "front": "snack/ch-honeyprism-almond-choc/front.png"
+    }
+  },
+  {
+    "id": "it-goldfoil-hazelnut-trio",
+    "name": "三粒装金箔榛果威化巧克力球",
+    "country": "意大利",
+    "country_code": "IT",
+    "inspiration": "参考费列罗榛果威化巧克力三粒装（Ferrero Rocher T3）",
+    "kind": "chocolate",
+    "package": "box",
+    "size_mm": [
+      115,
+      40,
+      38
+    ],
+    "colors": {
+      "primary": "#d4af37",
+      "secondary": "#ffffff"
+    },
+    "verb_zh": "剥一颗",
+    "note_zh": "剥开沙沙响的金锡纸和棕纸托，整颗烤榛子外裹满碎果仁威化",
+    "type_zh": "巧克力",
+    "images": {
+      "front": "snack/it-goldfoil-hazelnut-trio/front.png"
+    }
+  },
+  {
+    "id": "it-milkstream-wafer-duo",
+    "name": "牛奶榛果酱脆威化双条",
+    "country": "意大利",
+    "country_code": "IT",
+    "inspiration": "参考健达缤纷乐（Kinder Bueno 牛奶榛果威化巧克力）",
+    "kind": "chocolate",
+    "package": "bar",
+    "size_mm": [
+      125,
+      52,
+      16
+    ],
+    "colors": {
+      "primary": "#ffffff",
+      "secondary": "#ea580c"
+    },
+    "verb_zh": "咬一口",
+    "note_zh": "薄薄一层脆威化咬破瞬间涌出丝滑冰凉的榛果牛奶浓浆",
+    "type_zh": "威化棒",
+    "images": {
+      "front": "snack/it-milkstream-wafer-duo/front.png"
+    }
+  },
+  {
+    "id": "ch-lilacmeadow-alpine-choc",
+    "name": "淡紫装阿尔卑斯牛奶巧克力",
+    "country": "瑞士",
+    "country_code": "CH",
+    "inspiration": "参考妙卡阿尔卑斯牛奶巧克力（Milka Alpine Milk 淡紫板装）",
+    "kind": "chocolate",
+    "package": "bar",
+    "size_mm": [
+      150,
+      75,
+      10
+    ],
+    "colors": {
+      "primary": "#7e5bef",
+      "secondary": "#ffffff"
+    },
+    "verb_zh": "掰一块",
+    "note_zh": "一认就出的温柔淡紫色包装，入口即化的高山鲜奶甜巧",
+    "type_zh": "巧克力",
+    "images": {
+      "front": "snack/ch-lilacmeadow-alpine-choc/front.png"
+    }
+  },
+  {
+    "id": "gb-royalpurple-twopour-choc",
+    "name": "皇家紫装鲜奶纯巧排块",
+    "country": "英国",
+    "country_code": "GB",
+    "inspiration": "参考吉百利牛奶巧克力（Cadbury Dairy Milk 紫色排块）",
+    "kind": "chocolate",
+    "package": "bar",
+    "size_mm": [
+      148,
+      72,
+      11
+    ],
+    "colors": {
+      "primary": "#3b1c71",
+      "secondary": "#f8fafc"
+    },
+    "verb_zh": "掰一块",
+    "note_zh": "厚实绵密的英式高乳脂牛奶巧克力，奶味浓得化不开",
+    "type_zh": "巧克力",
+    "images": {
+      "front": "snack/gb-royalpurple-twopour-choc/front.png"
+    }
+  },
+  {
+    "id": "ch-crimsonmelt-truffle-pouch",
+    "name": "红袋软心融流松露巧克力球",
+    "country": "瑞士",
+    "country_code": "CH",
+    "inspiration": "参考瑞士莲软心牛奶巧克力红袋（Lindt Lindor Milk Red）",
+    "kind": "chocolate",
+    "package": "pouch",
+    "size_mm": [
+      120,
+      180,
+      48
+    ],
+    "colors": {
+      "primary": "#b91c1c",
+      "secondary": "#e5be58"
+    },
+    "verb_zh": "剥一颗",
+    "note_zh": "外层硬巧壳咬碎后，里面软心像丝绸一样在舌尖化开",
+    "type_zh": "巧克力",
+    "images": {
+      "front": "snack/ch-crimsonmelt-truffle-pouch/front.png"
+    }
+  },
+  {
+    "id": "us-maroonblock-silver-choc",
+    "name": "深棕银字美式牛奶巧克力排",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考好时牛奶巧克力排块（Hershey's Milk Chocolate Bar）",
+    "kind": "chocolate",
+    "package": "bar",
+    "size_mm": [
+      136,
+      54,
+      9
+    ],
+    "colors": {
+      "primary": "#3d1e16",
+      "secondary": "#e2e8f0"
+    },
+    "verb_zh": "掰一格",
+    "note_zh": "微微带一点点美式浓缩乳酸香的经典银字棕纸薄排块",
+    "type_zh": "巧克力",
+    "images": {
+      "front": "snack/us-maroonblock-silver-choc/front.png"
+    }
+  },
+  {
+    "id": "us-orangecup-pb-chocolate",
+    "name": "橙装咸花生酱牛奶巧克力双杯",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考里斯花生酱巧克力杯（Reese's 2 Peanut Butter Cups）",
+    "kind": "chocolate",
+    "package": "bar",
+    "size_mm": [
+      110,
+      56,
+      15
+    ],
+    "colors": {
+      "primary": "#f26522",
+      "secondary": "#fde047"
+    },
+    "verb_zh": "咬一口",
+    "note_zh": "咸沙沙的浓花生酱裹在甜牛奶巧克力花边小杯里，甜咸永动机",
+    "type_zh": "巧克力",
+    "images": {
+      "front": "snack/us-orangecup-pb-chocolate/front.png"
+    }
+  },
+  {
+    "id": "de-goldbag-juicy-gummies",
+    "name": "金袋五彩小熊水果软糖",
+    "country": "德国",
+    "country_code": "DE",
+    "inspiration": "参考哈瑞宝金熊软糖（Haribo Goldbears 金袋装）",
+    "kind": "candy",
+    "package": "pouch",
+    "size_mm": [
+      125,
+      175,
+      32
+    ],
+    "colors": {
+      "primary": "#eab308",
+      "secondary": "#dc2626"
+    },
+    "verb_zh": "嚼两颗",
+    "note_zh": "超级有嚼劲的德国果汁软糖，边看夜景边腮帮子嚼得停不下来",
+    "type_zh": "软糖",
+    "images": {
+      "front": "snack/de-goldbag-juicy-gummies/front.png"
+    }
+  },
+  {
+    "id": "us-redpouch-rainbow-chews",
+    "name": "红袋五彩脆壳水果糖豆",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考彩虹糖原味果味糖（Skittles Original 红袋）",
+    "kind": "candy",
+    "package": "pouch",
+    "size_mm": [
+      115,
+      155,
+      28
+    ],
+    "colors": {
+      "primary": "#dc2626",
+      "secondary": "#22c55e"
+    },
+    "verb_zh": "倒一把",
+    "note_zh": "不用嚼巧克力也能一把抓进嘴里的五彩酸甜水果炸弹",
+    "type_zh": "水果糖",
+    "images": {
+      "front": "snack/us-redpouch-rainbow-chews/front.png"
+    }
+  },
+  {
+    "id": "nl-blueroll-chewy-mints",
+    "name": "蓝白卷装脆皮软心薄荷糖",
+    "country": "荷兰",
+    "country_code": "NL",
+    "inspiration": "参考曼妥思清劲薄荷糖长卷（Mentos Mint Roll）",
+    "kind": "candy",
+    "package": "stick",
+    "size_mm": [
+      22,
+      118,
+      22
+    ],
+    "colors": {
+      "primary": "#0284c7",
+      "secondary": "#ffffff"
+    },
+    "verb_zh": "抠一颗",
+    "note_zh": "拇指一顶铝箔纸抠出一颗白圆糖，外脆里糯一口清凉",
+    "type_zh": "薄荷糖",
+    "images": {
+      "front": "snack/nl-blueroll-chewy-mints/front.png"
+    }
+  },
+  {
+    "id": "es-petalpop-strawberry-lolly",
+    "name": "花瓣圆标草莓奶油棒棒糖",
+    "country": "西班牙",
+    "country_code": "ES",
+    "inspiration": "参考珍宝珠棒棒糖（Chupa Chups Strawberry Lollipop）",
+    "kind": "candy",
+    "package": "stick",
+    "size_mm": [
+      35,
+      95,
+      35
+    ],
+    "colors": {
+      "primary": "#dc2626",
+      "secondary": "#facc15"
+    },
+    "verb_zh": "含着舔",
+    "note_zh": "不想抽烟的时候嘴里叼一根草莓奶味棒棒糖，甜丝丝混过晚风",
+    "type_zh": "棒棒糖",
+    "images": {
+      "front": "snack/es-petalpop-strawberry-lolly/front.png"
+    }
+  },
+  {
+    "id": "it-clearflip-pocket-mints",
+    "name": "透明翻盖迷你薄荷糖盒",
+    "country": "意大利",
+    "country_code": "IT",
+    "inspiration": "参考嘀嗒糖鲜薄荷（Tic Tac Fresh Mint 透明小方盒）",
+    "kind": "candy",
+    "package": "box",
+    "size_mm": [
+      38,
+      68,
+      16
+    ],
+    "colors": {
+      "primary": "#16a34a",
+      "secondary": "#ffffff"
+    },
+    "verb_zh": "倒两粒",
+    "note_zh": "揣在裤兜里走路咔嗒咔嗒响，单手掀小盖倒两粒进嘴",
+    "type_zh": "薄荷糖",
+    "images": {
+      "front": "snack/it-clearflip-pocket-mints/front.png"
+    }
+  },
+  {
+    "id": "us-icewave-sugarfree-gum",
+    "name": "无糖清凉薄荷木糖醇口香糖",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考益达/欧必特无糖口香糖（Orbit / Extra Peppermint Gum）",
+    "kind": "gum",
+    "package": "box",
+    "size_mm": [
+      44,
+      86,
+      14
+    ],
+    "colors": {
+      "primary": "#0284c7",
+      "secondary": "#ffffff"
+    },
+    "verb_zh": "嚼两粒",
+    "note_zh": "抽完烟下楼前必嚼两粒，清冽薄荷一下子把烟味压下去",
+    "type_zh": "口香糖",
+    "images": {
+      "front": "snack/us-icewave-sugarfree-gum/front.png"
+    }
+  },
+  {
+    "id": "us-greenribbon-sourcream-chips",
+    "name": "绿袋酸奶油香葱薄切薯片",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考乐事 酸奶油洋葱味薯片（Lay's Sour Cream & Onion 绿袋）",
+    "kind": "chips",
+    "package": "bag",
+    "size_mm": [
+      165,
+      235,
+      55
+    ],
+    "colors": {
+      "primary": "#16a34a",
+      "secondary": "#fde047"
+    },
+    "verb_zh": "倒一口",
+    "note_zh": "比原味多了一层浓郁酸奶葱香，欧美派对消耗最快的一袋绿薯片",
+    "type_zh": "薯片",
+    "images": {
+      "front": "snack/us-greenribbon-sourcream-chips/front.png"
+    }
+  },
+  {
+    "id": "us-greentube-onion-crisps",
+    "name": "绿筒酸乳酪洋葱叠片薯片",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考品客 酸乳酪洋葱薯片（Pringles Sour Cream & Onion 绿筒）",
+    "kind": "chips",
+    "package": "tin",
+    "size_mm": [
+      76,
+      235,
+      76
+    ],
+    "colors": {
+      "primary": "#1eab4b",
+      "secondary": "#ffffff"
+    },
+    "verb_zh": "拿一片",
+    "note_zh": "掀开透明盖就是扑鼻的奶香洋葱粉味，片片厚薄一致",
+    "type_zh": "薯片",
+    "images": {
+      "front": "snack/us-greentube-onion-crisps/front.png"
+    }
+  },
+  {
+    "id": "us-cobalt-ranch-cornchips",
+    "name": "蓝袋冰爽牧场三角玉米片",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考多力多滋 酷牧场味（Doritos Cool Ranch 蓝袋）",
+    "kind": "chips",
+    "package": "bag",
+    "size_mm": [
+      170,
+      240,
+      58
+    ],
+    "colors": {
+      "primary": "#1d4ed8",
+      "secondary": "#38bdf8"
+    },
+    "verb_zh": "倒一口",
+    "note_zh": "大蒜洋葱酪乳混着番茄香草碎，咸鲜酸爽完全停不下来",
+    "type_zh": "玉米片",
+    "images": {
+      "front": "snack/us-cobalt-ranch-cornchips/front.png"
+    }
+  },
+  {
+    "id": "us-bluewave-ridged-chips",
+    "name": "原味厚切大波浪纹薯片",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考波乐 原味大波浪薯片（Ruffles Original 白蓝红袋）",
+    "kind": "chips",
+    "package": "bag",
+    "size_mm": [
+      168,
+      238,
+      56
+    ],
+    "colors": {
+      "primary": "#1e3a8a",
+      "secondary": "#dc2626"
+    },
+    "verb_zh": "咬一片",
+    "note_zh": "深深的锯齿波浪纹特别厚实抗嚼，咬下去咔嚓震耳",
+    "type_zh": "薯片",
+    "images": {
+      "front": "snack/us-bluewave-ridged-chips/front.png"
+    }
+  },
+  {
+    "id": "mx-violetfire-chili-rolls",
+    "name": "紫袋魔鬼辣椒青柠脆玉米卷",
+    "country": "墨西哥",
+    "country_code": "MX",
+    "inspiration": "参考Takis Fuego 紫袋暴辣青柠玉米卷",
+    "kind": "chips",
+    "package": "bag",
+    "size_mm": [
+      150,
+      230,
+      50
+    ],
+    "colors": {
+      "primary": "#5b21b6",
+      "secondary": "#ef4444"
+    },
+    "verb_zh": "嚼一根",
+    "note_zh": "又酸又暴辣的深红玉米小脆卷，吃三根额头就开始冒汗",
+    "type_zh": "玉米卷",
+    "images": {
+      "front": "snack/mx-violetfire-chili-rolls/front.png"
+    }
+  },
+  {
+    "id": "jp-redstripe-prawn-sticks",
+    "name": "红白斜纹原味烘烤鲜虾条",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考卡乐比虾条（Calbee Kappa Ebisen かっぱえびせん）",
+    "kind": "chips",
+    "package": "bag",
+    "size_mm": [
+      155,
+      225,
+      50
+    ],
+    "colors": {
+      "primary": "#e11d48",
+      "secondary": "#ffffff"
+    },
+    "verb_zh": "抓一把",
+    "note_zh": "浓浓烤海虾鲜味，真的一开袋就停不下嘴的老牌国民膨化",
+    "type_zh": "虾条",
+    "images": {
+      "front": "snack/jp-redstripe-prawn-sticks/front.png"
+    }
+  },
+  {
+    "id": "kr-redjoy-marshmallow-pie",
+    "name": "红盒软糯棉花糖巧克力派",
+    "country": "韩国",
+    "country_code": "KR",
+    "inspiration": "参考好丽友巧克力派（Orion Choco Pie 오리온 초코파이 情）",
+    "kind": "cookies",
+    "package": "box",
+    "size_mm": [
+      190,
+      145,
+      58
+    ],
+    "colors": {
+      "primary": "#c81e24",
+      "secondary": "#ffffff"
+    },
+    "verb_zh": "咬一口",
+    "note_zh": "松软双层小蛋糕夹着韧韧的白棉花糖，外淋一层巧克力衣",
+    "type_zh": "巧克力派",
+    "images": {
+      "front": "snack/kr-redjoy-marshmallow-pie/front.png"
+    }
+  },
+  {
+    "id": "jp-harborcup-seafood-noodle",
+    "name": "白杯红带原味鲜虾杯面",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考日清合味道杯面（Nissin Cup Noodles 白杯红带）",
+    "kind": "noodles",
+    "package": "cup",
+    "size_mm": [
+      96,
+      108,
+      96
+    ],
+    "colors": {
+      "primary": "#f8f6f0",
+      "secondary": "#d8262c"
+    },
+    "verb_zh": "吸一口面",
+    "note_zh": "撕开半边纸盖等三分钟，热腾腾端上天台连汤带面喝得精光",
+    "type_zh": "杯面",
+    "images": {
+      "front": "snack/jp-harborcup-seafood-noodle/front.png"
+    }
+  },
+  {
+    "id": "kr-blazecup-spicy-ramyun",
+    "name": "红杯韩式香菇辣牛肉杯面",
+    "country": "韩国",
+    "country_code": "KR",
+    "inspiration": "参考农心辛拉面杯面（Nongshim Shin Ramyun 신라면 红杯）",
+    "kind": "noodles",
+    "package": "cup",
+    "size_mm": [
+      98,
+      110,
+      98
+    ],
+    "colors": {
+      "primary": "#d8262c",
+      "secondary": "#141416"
+    },
+    "verb_zh": "吸一口面",
+    "note_zh": "红彤彤的辣牛肉香菇汤底，冬夜吹着冷风吸一口辣得直哈气",
+    "type_zh": "杯面",
+    "images": {
+      "front": "snack/kr-blazecup-spicy-ramyun/front.png"
+    }
+  },
+  {
+    "id": "cn-goldrice-snow-crackers",
+    "name": "甜白糖霜烘烤大米饼",
+    "country": "中国",
+    "country_code": "CN",
+    "inspiration": "参考旺旺雪饼（Want Want Shelly Senbei）",
+    "kind": "cookies",
+    "package": "bag",
+    "size_mm": [
+      175,
+      240,
+      58
+    ],
+    "colors": {
+      "primary": "#f59e0b",
+      "secondary": "#dc2626"
+    },
+    "verb_zh": "咬一片",
+    "note_zh": "咸脆膨松的大圆米饼上烤着甜甜的白糖霜点子，满嘴米香",
+    "type_zh": "米饼",
+    "images": {
+      "front": "snack/cn-goldrice-snow-crackers/front.png"
+    }
+  },
+  {
+    "id": "cn-milkycloud-creamy-chews",
+    "name": "糯米纸浓香牛奶糖",
+    "country": "中国",
+    "country_code": "CN",
+    "inspiration": "参考冠生园大白兔奶糖（White Rabbit Creamy Candy）",
+    "kind": "candy",
+    "package": "pouch",
+    "size_mm": [
+      130,
+      185,
+      42
+    ],
+    "colors": {
+      "primary": "#f8f6f0",
+      "secondary": "#1d4ed8"
+    },
+    "verb_zh": "剥一颗",
+    "note_zh": "连着那层薄如蝉翼的糯米纸一起放进嘴里，慢慢化出浓郁炼乳香",
+    "type_zh": "奶糖",
+    "images": {
+      "front": "snack/cn-milkycloud-creamy-chews/front.png"
+    }
+  },
+  {
+    "id": "cn-minimalwhite-chili-strips",
+    "name": "极简白袋红油大面筋辣条",
+    "country": "中国",
+    "country_code": "CN",
+    "inspiration": "参考卫龙大面筋辣条（Weilong Spicy Strips 极简白袋）",
+    "kind": "snack",
+    "package": "pouch",
+    "size_mm": [
+      145,
+      215,
+      26
+    ],
+    "colors": {
+      "primary": "#f8fafc",
+      "secondary": "#dc2626"
+    },
+    "verb_zh": "扯一根",
+    "note_zh": "甜辣带麻、吸饱红油气孔的大面筋，配冰啤酒简直绝杀",
+    "type_zh": "辣条",
+    "images": {
+      "front": "snack/cn-minimalwhite-chili-strips/front.png"
+    }
+  },
+  {
+    "id": "kr-seoulstick-choco-pretzel",
+    "name": "韩式红盒细长巧克力饼干棒",
+    "country": "韩国",
+    "country_code": "KR",
+    "inspiration": "参考韩国乐天巧克力棒（Lotte Pepero Original 빼빼로 红盒）",
+    "kind": "cookies",
+    "package": "box",
+    "size_mm": [
+      70,
+      155,
+      18
+    ],
+    "colors": {
+      "primary": "#c81e24",
+      "secondary": "#3e1f16"
+    },
+    "verb_zh": "抽一根",
+    "note_zh": "韩国便利店人手一盒的红棕细长饼干棒，微苦可可脆皮不甜腻",
+    "type_zh": "饼干棒",
+    "images": {
+      "front": "snack/kr-seoulstick-choco-pretzel/front.png"
+    }
+  },
+  {
+    "id": "us-skycookie-chocchip-pack",
+    "name": "蓝袋黑巧豆酥脆曲奇",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考趣多多原味巧克力豆曲奇（Chips Ahoy! Original 蓝袋）",
+    "kind": "cookies",
+    "package": "bag",
+    "size_mm": [
+      165,
+      115,
+      52
+    ],
+    "colors": {
+      "primary": "#0284c7",
+      "secondary": "#dc2626"
+    },
+    "verb_zh": "拿一块",
+    "note_zh": "掰开松酥掉渣的曲奇饼，每一口都能咬到好几粒浓黑巧克力豆",
+    "type_zh": "曲奇",
+    "images": {
+      "front": "snack/us-skycookie-chocchip-pack/front.png"
+    }
+  },
+  {
+    "id": "us-crimson-butter-crackers",
+    "name": "红盒金圆标黄油圆薄脆饼干",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考乐之原味薄脆饼干（Ritz Crackers 红盒金圆标）",
+    "kind": "cookies",
+    "package": "box",
+    "size_mm": [
+      110,
+      195,
+      54
+    ],
+    "colors": {
+      "primary": "#c81e24",
+      "secondary": "#facc15"
+    },
+    "verb_zh": "拿两片",
+    "note_zh": "酥得一抿就碎的海盐黄油圆饼干，单吃咸香耐嚼",
+    "type_zh": "饼干",
+    "images": {
+      "front": "snack/us-crimson-butter-crackers/front.png"
+    }
+  },
+  {
+    "id": "us-cobalt-seasalt-peanuts",
+    "name": "蓝罐海盐慢烘焙花生仁",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考绅士牌盐焗花生（Planters Salted Peanuts 蓝罐）",
+    "kind": "nuts",
+    "package": "tin",
+    "size_mm": [
+      84,
+      135,
+      84
+    ],
+    "colors": {
+      "primary": "#1e3a8a",
+      "secondary": "#facc15"
+    },
+    "verb_zh": "抓一把",
+    "note_zh": "下酒第一神器，海盐粒裹着慢火烘透的大颗脆花生仁",
+    "type_zh": "花生",
+    "images": {
+      "front": "snack/us-cobalt-seasalt-peanuts/front.png"
+    }
+  },
+  {
+    "id": "it-dipcup-hazelnut-sticks",
+    "name": "双格杯榛果可可酱配手指饼干",
+    "country": "意大利",
+    "country_code": "IT",
+    "inspiration": "参考能多益随享杯（Nutella & GO! 榛果可可酱配麦香饼干棒）",
+    "kind": "chocolate",
+    "package": "cup",
+    "size_mm": [
+      92,
+      96,
+      48
+    ],
+    "colors": {
+      "primary": "#ffffff",
+      "secondary": "#dc2626"
+    },
+    "verb_zh": "蘸一下吃",
+    "note_zh": "拿一根手指脆麦棒往浓稠的榛子巧克力酱里狠狠挖一勺",
+    "type_zh": "蘸酱饼干",
+    "images": {
+      "front": "snack/it-dipcup-hazelnut-sticks/front.png"
+    }
+  },
+  {
+    "id": "us-northwoods-beef-jerky",
+    "name": "红黑袋原木慢熏黑椒牛肉干",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考杰克林克原味牛肉干（Jack Link's Original Beef Jerky）",
+    "kind": "jerky",
+    "package": "pouch",
+    "size_mm": [
+      145,
+      205,
+      28
+    ],
+    "colors": {
+      "primary": "#991b1b",
+      "secondary": "#18181b"
+    },
+    "verb_zh": "撕一条嚼",
+    "note_zh": "山核桃木慢熏出来的紧实瘦牛肉干，越嚼肉香黑椒味越浓",
+    "type_zh": "牛肉干",
+    "images": {
+      "front": "snack/us-northwoods-beef-jerky/front.png"
+    }
+  },
+  {
+    "id": "jp-light-salted-chips",
+    "name": "淡盐味薄切薯片",
+    "family": "Calbee Potato Chips",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考卡乐比淡盐味薯片（Calbee Potato Chips Usushio）",
+    "kind": "chips",
+    "package": "bag",
+    "size_mm": [
+      180,
+      230,
+      55
+    ],
+    "colors": {
+      "primary": "#DC281E",
+      "secondary": "#F3C533"
+    },
+    "type_zh": "薯片",
+    "verb_zh": "吃一片",
+    "note_zh": "鼓鼓囊囊的经典红黄充气袋，薄脆轻盈，纯粹的盐粒带出马铃薯本真的焦香。",
+    "images": {
+      "front": "snack/jp-light-salted-chips/front.png"
+    }
+  },
+  {
+    "id": "jp-crispy-potato-cup",
+    "name": "沙拉味杯装脆薯条",
+    "family": "Jagariko",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考卡乐比佳可力沙拉味薯条杯（Calbee Jagariko Salad）",
+    "kind": "chips",
+    "package": "cup",
+    "size_mm": [
+      86,
+      88,
+      86
+    ],
+    "colors": {
+      "primary": "#389943",
+      "secondary": "#df3324"
+    },
+    "type_zh": "薯条",
+    "verb_zh": "抽一根",
+    "note_zh": "撕开纸盖抽出一根，嘎吱嘎吱咬碎酥脆又扎实的土豆棒",
+    "images": {
+      "front": "snack/jp-crispy-potato-cup/front.png"
+    }
+  },
+  {
+    "id": "jp-hexbox-choco-biscuit",
+    "name": "考拉造型巧克力注心饼干",
+    "family": "Koala's March",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考乐天小熊饼巧克力味（Lotte Koala's March Chocolate）",
+    "kind": "cookies",
+    "package": "box",
+    "size_mm": [
+      72,
+      135,
+      63
+    ],
+    "colors": {
+      "primary": "#4E9A46",
+      "secondary": "#F9D448"
+    },
+    "type_zh": "注心饼干",
+    "verb_zh": "吃一只",
+    "note_zh": "摇晃着六角纸盒，倒出一颗颗印着各种可爱考拉图案的空心饼干",
+    "images": {
+      "front": "snack/jp-hexbox-choco-biscuit/front.png"
+    }
+  },
+  {
+    "id": "jp-mushroom-choco-cookies",
+    "name": "蘑菇造型巧克力饼干",
+    "family": "Kinoko no Yama",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考明治 蘑菇山巧克力饼干（Meiji Kinoko no Yama）",
+    "kind": "cookies",
+    "package": "box",
+    "size_mm": [
+      150,
+      90,
+      30
+    ],
+    "colors": {
+      "primary": "#6B9B37",
+      "secondary": "#5C3317"
+    },
+    "type_zh": "巧克力饼干",
+    "verb_zh": "吃一颗",
+    "note_zh": "伞盖是香浓牛奶巧克力，伞柄是酥脆饼干棒的小蘑菇点心。",
+    "images": {
+      "front": "snack/jp-mushroom-choco-cookies/front.png"
+    }
+  },
+  {
+    "id": "jp-crispy-cocoa-bar",
+    "name": "黑可可脆心饼干巧克力棒",
+    "family": "Black Thunder",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考有乐制果 黑雷神巧克力棒（Yuraku Black Thunder）",
+    "kind": "chocolate",
+    "package": "bar",
+    "size_mm": [
+      115,
+      45,
+      14
+    ],
+    "colors": {
+      "primary": "#1A1A1A",
+      "secondary": "#FFD000"
+    },
+    "type_zh": "巧克力棒",
+    "verb_zh": "咬一口",
+    "note_zh": "黑色可可饼干碎混合黄油曲奇，裹以浓厚巧克力，咬开是脆爽浓郁的断裂感。",
+    "images": {
+      "front": "snack/jp-crispy-cocoa-bar/front.png"
+    }
+  },
+  {
+    "id": "jp-puffed-corn-stick",
+    "name": "玉米浓汤风味玉米棒",
+    "family": "Umaibo",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考八百金 美味棒 玉米浓汤味（Yaokin Umaibo Corn Potage）",
+    "kind": "snack",
+    "package": "stick",
+    "size_mm": [
+      32,
+      165,
+      28
+    ],
+    "colors": {
+      "primary": "#7CB342",
+      "secondary": "#FDD835"
+    },
+    "type_zh": "玉米棒",
+    "verb_zh": "咬一口",
+    "note_zh": "怀旧感十足的圆柱空心脆棒，一咬下去酥脆掉渣、满口浓汤甜香",
+    "images": {
+      "front": "snack/jp-puffed-corn-stick/front.png"
+    }
+  },
+  {
+    "id": "jp-fruit-chew-stick",
+    "name": "果汁夹心果味软糖条",
+    "family": "Hi-Chew",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考森永嗨啾葡萄味软糖（Morinaga Hi-Chew Grape）",
+    "kind": "candy",
+    "package": "stick",
+    "size_mm": [
+      128,
+      28,
+      17
+    ],
+    "colors": {
+      "primary": "#5B2C83",
+      "secondary": "#FFFFFF"
+    },
+    "type_zh": "软糖",
+    "verb_zh": "嚼一颗",
+    "note_zh": "咬破外层韧劲糖衣，浓郁紫葡萄果香在唇齿间弹跳蔓延。",
+    "images": {
+      "front": "snack/jp-fruit-chew-stick/front.png"
+    }
+  },
+  {
+    "id": "jp-sailing-choco-biscuit",
+    "name": "帆船浮雕全麦巧克力饼干",
+    "family": "Alfort",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考波路梦 帆船巧克力饼干（Bourbon Alfort Mini Chocolate）",
+    "kind": "cookies",
+    "package": "box",
+    "size_mm": [
+      170,
+      77,
+      17
+    ],
+    "colors": {
+      "primary": "#1b3576",
+      "secondary": "#d4af37"
+    },
+    "type_zh": "巧克力饼",
+    "verb_zh": "吃一块",
+    "note_zh": "浮雕着扬帆远航古典帆船的浓醇巧克力，稳稳贴在香脆的全麦消化饼干上。",
+    "images": {
+      "front": "snack/jp-sailing-choco-biscuit/front.png"
+    }
+  },
+  {
+    "id": "jp-crescent-rice-cracker",
+    "name": "柿种花生米果",
+    "family": "Kaki no Tane",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考龟田制果 柿之种花生米果（Kameda Kaki no Tane）",
+    "kind": "snack",
+    "package": "bag",
+    "size_mm": [
+      190,
+      270,
+      35
+    ],
+    "colors": {
+      "primary": "#E85D04",
+      "secondary": "#0A2463"
+    },
+    "type_zh": "米果",
+    "verb_zh": "抓一把",
+    "note_zh": "微辣酱油味的月牙形米果混着香脆烤花生，是经典的下酒零食。",
+    "images": {
+      "front": "snack/jp-crescent-rice-cracker/front.png"
+    }
+  },
+  {
+    "id": "jp-classic-milk-bar",
+    "name": "经典牛奶巧克力排块",
+    "family": "Meiji Milk Chocolate",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考明治 牛奶巧克力排块（Meiji Milk Chocolate Bar）",
+    "kind": "chocolate",
+    "package": "bar",
+    "size_mm": [
+      165,
+      71,
+      9
+    ],
+    "colors": {
+      "primary": "#452213",
+      "secondary": "#E5A93B"
+    },
+    "type_zh": "排块",
+    "verb_zh": "掰一块",
+    "note_zh": "剥开复古棕金纸套与银箔纸，规整的凹槽方格散发着浓郁丝滑的牛奶甜香。",
+    "images": {
+      "front": "snack/jp-classic-milk-bar/front.png"
+    }
+  },
+  {
+    "id": "jp-fried-tofu-udon-cup",
+    "name": "油豆腐乌冬碗面",
+    "family": "Donbei",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考日清 兵卫狐狸乌冬碗面（Nissin Donbei Kitsune Udon）",
+    "kind": "noodles",
+    "package": "cup",
+    "size_mm": [
+      145,
+      75,
+      145
+    ],
+    "colors": {
+      "primary": "#2a6f3b",
+      "secondary": "#e59f2c"
+    },
+    "type_zh": "碗面",
+    "verb_zh": "吸溜一口",
+    "note_zh": "撕开碗盖，整块吸饱甜咸出汁的油豆腐盖在爽滑粗乌冬上",
+    "images": {
+      "front": "snack/jp-fried-tofu-udon-cup/front.png"
+    }
+  },
+  {
+    "id": "jp-beak-choco-ball",
+    "name": "鸟嘴纸盒花生巧克力球",
+    "family": "Choco Ball",
+    "country": "日本",
+    "country_code": "JP",
+    "inspiration": "参考森永 巧克力球 花生味（Morinaga Choco Ball Peanut）",
+    "kind": "chocolate",
+    "package": "box",
+    "size_mm": [
+      43,
+      85,
+      23
+    ],
+    "colors": {
+      "primary": "#D8232A",
+      "secondary": "#FFCE00"
+    },
+    "type_zh": "巧克力球",
+    "verb_zh": "倒一颗",
+    "note_zh": "掀开像小鸟尖嘴一样的开盒纸口，骨碌滚出一颗圆滚滚的花生夹心巧克力豆。",
+    "images": {
+      "front": "snack/jp-beak-choco-ball/front.png"
+    }
+  },
+  {
+    "id": "kr-sweet-butter-chips",
+    "name": "蜂蜜黄油薯片",
+    "family": "Honey Butter Chip",
+    "country": "韩国",
+    "country_code": "KR",
+    "inspiration": "参考海太卡乐比 蜂蜜黄油薯片（Haitai-Calbee Honey Butter Chip）",
+    "kind": "chips",
+    "package": "bag",
+    "size_mm": [
+      170,
+      225,
+      55
+    ],
+    "colors": {
+      "primary": "#F7E396",
+      "secondary": "#7D4A27"
+    },
+    "type_zh": "薯片",
+    "verb_zh": "吃一片",
+    "note_zh": "撕开包装便涌出浓郁醇厚的黄油与甜润蜂蜜香气，薄脆甜咸交织",
+    "images": {
+      "front": "snack/kr-sweet-butter-chips/front.png"
+    }
+  },
+  {
+    "id": "kr-crispy-shrimp-crackers",
+    "name": "原味鲜虾条",
+    "family": "Saeukkang",
+    "country": "韩国",
+    "country_code": "KR",
+    "inspiration": "参考农心 虾条（Nongshim Saeukkang）",
+    "kind": "snack",
+    "package": "bag",
+    "size_mm": [
+      160,
+      230,
+      40
+    ],
+    "colors": {
+      "primary": "#D3381C",
+      "secondary": "#F3ECE1"
+    },
+    "type_zh": "虾条",
+    "verb_zh": "抓一把",
+    "note_zh": "条纹分明的酥脆咸香虾条，韩国国民级下酒解馋零嘴。",
+    "images": {
+      "front": "snack/kr-crispy-shrimp-crackers/front.png"
+    }
+  },
+  {
+    "id": "kr-layered-corn-chips",
+    "name": "四层酥脆玉米片",
+    "family": "Turtle Chips",
+    "country": "韩国",
+    "country_code": "KR",
+    "inspiration": "参考好丽友 乌龟片 玉米浓汤味（Orion Kkobuk Chip Corn Soup Flavor）",
+    "kind": "chips",
+    "package": "bag",
+    "size_mm": [
+      180,
+      245,
+      55
+    ],
+    "colors": {
+      "primary": "#85B83A",
+      "secondary": "#F3C538"
+    },
+    "type_zh": "玉米脆",
+    "verb_zh": "嚼一片",
+    "note_zh": "四层叠合的龟壳状薄脆，一口咬下去层层爆裂酥脆过瘾",
+    "images": {
+      "front": "snack/kr-layered-corn-chips/front.png"
+    }
+  },
+  {
+    "id": "kr-vintage-choco-brownie",
+    "name": "浓厚巧克力布朗尼",
+    "family": "Market O Real Brownie",
+    "country": "韩国",
+    "country_code": "KR",
+    "inspiration": "参考Market O 真实布朗尼（Market O Real Brownie）",
+    "kind": "cookies",
+    "package": "box",
+    "size_mm": [
+      140,
+      95,
+      35
+    ],
+    "colors": {
+      "primary": "#E58E9B",
+      "secondary": "#3E2319"
+    },
+    "type_zh": "布朗尼",
+    "verb_zh": "咬一口",
+    "note_zh": "复古粉色盒装的烘焙小蛋糕，生巧克力般湿润绵密微苦。",
+    "images": {
+      "front": "snack/kr-vintage-choco-brownie/front.png"
+    }
+  },
+  {
+    "id": "kr-hot-chicken-cup-noodles",
+    "name": "超辣鸡肉风味干拌杯面",
+    "family": "Buldak Bokkeum Myeon",
+    "country": "韩国",
+    "country_code": "KR",
+    "inspiration": "参考三养 火鸡面小杯装（Samyang Buldak Bokkeum Myeon Cup）",
+    "kind": "noodles",
+    "package": "cup",
+    "size_mm": [
+      100,
+      110,
+      100
+    ],
+    "colors": {
+      "primary": "#1A1A1A",
+      "secondary": "#E63946"
+    },
+    "type_zh": "杯面",
+    "verb_zh": "挑一口",
+    "note_zh": "漆黑杯身印着喷火图案，拌开酱汁瞬间腾起让人额头冒汗的浓烈辛香",
+    "images": {
+      "front": "snack/kr-hot-chicken-cup-noodles/front.png"
+    }
+  },
+  {
+    "id": "kr-choco-wafer-fingers",
+    "name": "双管巧克力榛果威化酥",
+    "family": "Heim",
+    "country": "韩国",
+    "country_code": "KR",
+    "inspiration": "参考皇冠 巧克力夹心威化（Crown Choco Heim）",
+    "kind": "cookies",
+    "package": "box",
+    "size_mm": [
+      180,
+      135,
+      32
+    ],
+    "colors": {
+      "primary": "#5A1E22",
+      "secondary": "#E8D29F"
+    },
+    "type_zh": "威化",
+    "verb_zh": "掰一根",
+    "note_zh": "冰镇后更加酥脆的并排双管巧克力夹心威化",
+    "images": {
+      "front": "snack/kr-choco-wafer-fingers/front.png"
+    }
+  },
+  {
+    "id": "cn-sweet-milk-ball-biscuit",
+    "name": "特浓牛奶小馒头饼干",
+    "family": "Want Want Baby Ball Cookies",
+    "country": "中国",
+    "country_code": "CN",
+    "inspiration": "参考旺旺 旺仔小馒头（Want Want Baby Ball Cookies）",
+    "kind": "cookies",
+    "package": "bag",
+    "size_mm": [
+      130,
+      175,
+      40
+    ],
+    "colors": {
+      "primary": "#E60012",
+      "secondary": "#FFE000"
+    },
+    "type_zh": "小饼干",
+    "verb_zh": "含一颗",
+    "note_zh": "圆滚滚金黄酥脆的微型奶丸，在舌尖带着浓郁奶香慢慢化开",
+    "images": {
+      "front": "snack/cn-sweet-milk-ball-biscuit/front.png"
+    }
+  },
+  {
+    "id": "cn-spiced-sunflower-seeds",
+    "name": "五香葵花籽",
+    "family": "ChaCheer Sunflower Seeds",
+    "country": "中国",
+    "country_code": "CN",
+    "inspiration": "参考洽洽香瓜子（ChaCheer Spiced Sunflower Seeds）",
+    "kind": "nuts",
+    "package": "bag",
+    "size_mm": [
+      150,
+      220,
+      35
+    ],
+    "colors": {
+      "primary": "#BA2423",
+      "secondary": "#E4AD68"
+    },
+    "type_zh": "瓜子",
+    "verb_zh": "嗑一颗",
+    "note_zh": "红黄竖纹牛皮纸袋里，慢火烘炒出的百嗑不厌香气",
+    "images": {
+      "front": "snack/cn-spiced-sunflower-seeds/front.png"
+    }
+  },
+  {
+    "id": "cn-braised-beef-cup-noodles",
+    "name": "红烧牛肉桶面",
+    "family": "Master Kong Braised Beef Noodles",
+    "country": "中国",
+    "country_code": "CN",
+    "inspiration": "参考康师傅 红烧牛肉面桶面（Master Kong Braised Beef Flavored Instant Noodles）",
+    "kind": "noodles",
+    "package": "cup",
+    "size_mm": [
+      140,
+      125,
+      140
+    ],
+    "colors": {
+      "primary": "#C51D24",
+      "secondary": "#F39800"
+    },
+    "type_zh": "桶面",
+    "verb_zh": "嗦一口",
+    "note_zh": "揭开印着浓郁牛肉汤图案的纸盖，红亮油润的热汤飘出熟悉的经典香气",
+    "images": {
+      "front": "snack/cn-braised-beef-cup-noodles/front.png"
+    }
+  },
+  {
+    "id": "cn-crispy-peanut-candy",
+    "name": "经典多层酥心糖",
+    "family": "Crisp Candy",
+    "country": "中国",
+    "country_code": "CN",
+    "inspiration": "参考徐福记 经典酥心糖（Hsu Fu Chi Crisp Candy）",
+    "kind": "candy",
+    "package": "bag",
+    "size_mm": [
+      180,
+      240,
+      50
+    ],
+    "colors": {
+      "primary": "#C8102E",
+      "secondary": "#E5A93B"
+    },
+    "type_zh": "酥糖",
+    "verb_zh": "嚼一颗",
+    "note_zh": "层层起酥的花生糖衣薄如轻翼，轻咬一口便在舌尖酥脆化开",
+    "images": {
+      "front": "snack/cn-crispy-peanut-candy/front.png"
+    }
+  },
+  {
+    "id": "cn-crispy-prawn-chips",
+    "name": "蓬松鲜虾片",
+    "family": "Oishi Prawn Crackers",
+    "country": "中国",
+    "country_code": "CN",
+    "inspiration": "参考上好佳 鲜虾片（Oishi Prawn Crackers）",
+    "kind": "chips",
+    "package": "bag",
+    "size_mm": [
+      160,
+      220,
+      45
+    ],
+    "colors": {
+      "primary": "#3B82C4",
+      "secondary": "#E7462C"
+    },
+    "type_zh": "虾片",
+    "verb_zh": "吃一片",
+    "note_zh": "蓬松轻脆、入口即化，舌尖满是鲜咸微甜的童年海味。",
+    "images": {
+      "front": "snack/cn-crispy-prawn-chips/front.png"
+    }
+  },
+  {
+    "id": "cn-sour-green-plum",
+    "name": "原味酸甜青梅",
+    "family": "Liuliumei",
+    "country": "中国",
+    "country_code": "CN",
+    "inspiration": "参考溜溜梅 经典原味青梅（Liuliumei Green Plum）",
+    "kind": "snack",
+    "package": "pouch",
+    "size_mm": [
+      140,
+      190,
+      35
+    ],
+    "colors": {
+      "primary": "#88BE37",
+      "secondary": "#FFFFFF"
+    },
+    "type_zh": "蜜饯",
+    "verb_zh": "吃一颗",
+    "note_zh": "肉厚核小酸爽多汁，咬上一口瞬间生津开胃",
+    "images": {
+      "front": "snack/cn-sour-green-plum/front.png"
+    }
+  },
+  {
+    "id": "cn-soft-french-bread",
+    "name": "法式香甜小面包",
+    "family": "Panpan French Bread",
+    "country": "中国",
+    "country_code": "CN",
+    "inspiration": "参考盼盼 法式小面包（Panpan French Soft Bread）",
+    "kind": "snack",
+    "package": "bag",
+    "size_mm": [
+      220,
+      290,
+      75
+    ],
+    "colors": {
+      "primary": "#F7B52C",
+      "secondary": "#D92E2E"
+    },
+    "type_zh": "小面包",
+    "verb_zh": "吃一个",
+    "note_zh": "松软金黄的迷你面包，撕开包装扑面而来浓浓的蛋奶甜香",
+    "images": {
+      "front": "snack/cn-soft-french-bread/front.png"
+    }
+  },
+  {
+    "id": "cn-spiral-potato-twists",
+    "name": "田园蔬菜味螺旋薯卷",
+    "family": "Lonely God",
+    "country": "中国",
+    "country_code": "CN",
+    "inspiration": "参考旺旺 浪味仙 田园蔬菜味（Want Want Lonely God Vegetable Flavor）",
+    "kind": "chips",
+    "package": "bag",
+    "size_mm": [
+      165,
+      230,
+      55
+    ],
+    "colors": {
+      "primary": "#3B9FE2",
+      "secondary": "#FFFFFF"
+    },
+    "type_zh": "薯卷",
+    "verb_zh": "吃一卷",
+    "note_zh": "螺旋微卷的酥脆土豆卷，裹着微微泛甜的蔬菜粉香气",
+    "images": {
+      "front": "snack/cn-spiral-potato-twists/front.png"
+    }
+  },
+  {
+    "id": "cn-assorted-fruit-jelly-bag",
+    "name": "什锦小杯果冻袋装",
+    "family": "Strong Fruit Jelly",
+    "country": "中国",
+    "country_code": "CN",
+    "inspiration": "参考喜之郎 什锦果冻（Strong Fruit Jelly Assorted）",
+    "kind": "candy",
+    "package": "bag",
+    "size_mm": [
+      180,
+      240,
+      45
+    ],
+    "colors": {
+      "primary": "#FFA826",
+      "secondary": "#E62129"
+    },
+    "type_zh": "果冻",
+    "verb_zh": "撕开吸一个",
+    "note_zh": "撕开小杯铝箔封口，爽滑多汁的果冻顺着清甜汁水滑入口中",
+    "images": {
+      "front": "snack/cn-assorted-fruit-jelly-bag/front.png"
+    }
+  },
+  {
+    "id": "th-crispy-fried-seaweed",
+    "name": "酥脆海苔片",
+    "family": "Tao Kae Noi Crispy Seaweed",
+    "country": "泰国",
+    "country_code": "TH",
+    "inspiration": "参考小老板 经典原味脆海苔（Tao Kae Noi Crispy Seaweed Classic）",
+    "kind": "snack",
+    "package": "bag",
+    "size_mm": [
+      180,
+      230,
+      25
+    ],
+    "colors": {
+      "primary": "#1E7938",
+      "secondary": "#D7262E"
+    },
+    "type_zh": "脆海苔",
+    "verb_zh": "嚼一片",
+    "note_zh": "大张炸得蓬松酥脆的海苔片，咸香微咸，一咬满嘴咔嚓脆响。",
+    "images": {
+      "front": "snack/th-crispy-fried-seaweed/front.png"
+    }
+  },
+  {
+    "id": "th-spicy-squid-sheet",
+    "name": "甜辣风味烤鱿鱼片",
+    "family": "Bento Squid Snack",
+    "country": "泰国",
+    "country_code": "TH",
+    "inspiration": "参考Bento 超味鱿鱼片 甜辣味（Bento Squid Snack Sweet & Spicy）",
+    "kind": "snack",
+    "package": "bag",
+    "size_mm": [
+      115,
+      165,
+      8
+    ],
+    "colors": {
+      "primary": "#C81824",
+      "secondary": "#FFC72C"
+    },
+    "type_zh": "鱿鱼片",
+    "verb_zh": "嚼一片",
+    "note_zh": "裹满浓稠红亮辣酱的薄压鱿鱼片，初尝甜鲜随即爆出后劲十足的火辣。",
+    "images": {
+      "front": "snack/th-spicy-squid-sheet/front.png"
+    }
+  },
+  {
+    "id": "id-fried-instant-noodles",
+    "name": "印尼风味传统干拌捞面",
+    "family": "Mi Goreng",
+    "country": "印度尼西亚",
+    "country_code": "ID",
+    "inspiration": "参考营多 传统印尼捞面（Indomie Mi Goreng Instant Noodles）",
+    "kind": "noodles",
+    "package": "bag",
+    "size_mm": [
+      135,
+      125,
+      38
+    ],
+    "colors": {
+      "primary": "#F7F7F7",
+      "secondary": "#D32027"
+    },
+    "type_zh": "拌面",
+    "verb_zh": "嗦一口",
+    "note_zh": "裹满甜酱油与葱油的爽弹面条，撒上一撮酥脆的炸红葱碎",
+    "images": {
+      "front": "snack/id-fried-instant-noodles/front.png"
+    }
+  },
+  {
+    "id": "id-wavy-beef-chips",
+    "name": "烧烤牛肉味波浪薯片",
+    "family": "Chitato",
+    "country": "印度尼西亚",
+    "country_code": "ID",
+    "inspiration": "参考Chitato 烧烤牛肉味波浪薯片（Chitato Beef Barbeque Chips）",
+    "kind": "chips",
+    "package": "bag",
+    "size_mm": [
+      160,
+      220,
+      45
+    ],
+    "colors": {
+      "primary": "#5C1D24",
+      "secondary": "#F3B728"
+    },
+    "type_zh": "薯片",
+    "verb_zh": "嚼一片",
+    "note_zh": "厚切大波浪深槽里裹满浓郁炭烤香料粉，咔嚓脆响间肉香四溢",
+    "images": {
+      "front": "snack/id-wavy-beef-chips/front.png"
+    }
+  },
+  {
+    "id": "ph-garlic-cornick-snack",
+    "name": "蒜香脆炸玉米粒",
+    "family": "Boy Bawang Cornick",
+    "country": "菲律宾",
+    "country_code": "PH",
+    "inspiration": "参考KSK Boy Bawang 蒜香玉米粒（Boy Bawang Cornick Garlic Flavor）",
+    "kind": "snack",
+    "package": "bag",
+    "size_mm": [
+      140,
+      190,
+      25
+    ],
+    "colors": {
+      "primary": "#FED100",
+      "secondary": "#D71920"
+    },
+    "type_zh": "玉米粒",
+    "verb_zh": "抓一把嚼",
+    "note_zh": "浓郁生蒜风味裹满极度酥脆的整颗炸玉米粒",
+    "images": {
+      "front": "snack/ph-garlic-cornick-snack/front.png"
+    }
+  },
+  {
+    "id": "my-crispy-noodle-snack",
+    "name": "鸡汁味香脆点心面",
+    "family": "Mamee Monster",
+    "country": "马来西亚",
+    "country_code": "MY",
+    "inspiration": "参考妈咪 经典鸡汁味点心面（Mamee Monster Noodle Snack Chicken Flavor）",
+    "kind": "snack",
+    "package": "bag",
+    "size_mm": [
+      105,
+      135,
+      25
+    ],
+    "colors": {
+      "primary": "#FFD200",
+      "secondary": "#1856A6"
+    },
+    "type_zh": "点心面",
+    "verb_zh": "捏一把",
+    "note_zh": "撒上调味粉将面饼捏得粉碎，摇匀后大口倒进嘴里嘎吱嚼碎",
+    "images": {
+      "front": "snack/my-crispy-noodle-snack/front.png"
+    }
+  },
+  {
+    "id": "sg-golden-egg-fish-skin",
+    "name": "咸蛋黄香脆鱼皮",
+    "family": "Salted Egg Fish Skin",
+    "country": "新加坡",
+    "country_code": "SG",
+    "inspiration": "参考Irvins 咸蛋黄鱼皮（Irvins Salted Egg Fish Skin）",
+    "kind": "snack",
+    "package": "pouch",
+    "size_mm": [
+      160,
+      230,
+      65
+    ],
+    "colors": {
+      "primary": "#F7C300",
+      "secondary": "#1E1E1E"
+    },
+    "type_zh": "炸鱼皮",
+    "verb_zh": "嚼一片",
+    "note_zh": "裹满咸蛋黄碎与咖喱叶的酥脆鱼皮，沙沙作响鲜香扑鼻",
+    "images": {
+      "front": "snack/sg-golden-egg-fish-skin/front.png"
+    }
+  },
+  {
+    "id": "in-masala-crispy-curls",
+    "name": "玛萨拉香辣脆米条",
+    "family": "Kurkure",
+    "country": "印度",
+    "country_code": "IN",
+    "inspiration": "参考酷酷乐 玛萨拉味膨化脆条（Kurkure Masala Munch）",
+    "kind": "snack",
+    "package": "bag",
+    "size_mm": [
+      150,
+      210,
+      35
+    ],
+    "colors": {
+      "primary": "#0b6623",
+      "secondary": "#f37021"
+    },
+    "type_zh": "脆条",
+    "verb_zh": "嚼一根",
+    "note_zh": "裹满玛萨拉香料的弯曲脆条，每一口都是浓郁热烈的辛香焦脆。",
+    "images": {
+      "front": "snack/in-masala-crispy-curls/front.png"
+    }
+  },
+  {
+    "id": "in-glucose-milk-biscuit",
+    "name": "经典葡萄糖牛奶饼干",
+    "family": "Parle-G",
+    "country": "印度",
+    "country_code": "IN",
+    "inspiration": "参考Parle-G 经典葡萄糖牛奶饼干（Parle-G Original Glucose Biscuits）",
+    "kind": "cookies",
+    "package": "bag",
+    "size_mm": [
+      110,
+      52,
+      35
+    ],
+    "colors": {
+      "primary": "#F6C324",
+      "secondary": "#D8232A"
+    },
+    "type_zh": "饼干",
+    "verb_zh": "吃一片",
+    "note_zh": "印着标志性小女孩头像的红黄小包，微甜酥脆，在热奶茶里蘸一下再吃是国民标配。",
+    "images": {
+      "front": "snack/in-glucose-milk-biscuit/front.png"
+    }
+  },
+  {
+    "id": "in-masala-potato-sev",
+    "name": "印式香辣土豆脆细丝",
+    "family": "Aloo Bhujia",
+    "country": "印度",
+    "country_code": "IN",
+    "inspiration": "参考Haldiram's 香辣土豆脆细丝（Haldiram's Aloo Bhujia）",
+    "kind": "snack",
+    "package": "bag",
+    "size_mm": [
+      155,
+      215,
+      45
+    ],
+    "colors": {
+      "primary": "#F5B208",
+      "secondary": "#D02028"
+    },
+    "type_zh": "脆细丝",
+    "verb_zh": "抓一把",
+    "note_zh": "金黄纤细的土豆面条裹满浓郁玛萨拉香料，抓一把塞进嘴里香辣爽脆。",
+    "images": {
+      "front": "snack/in-masala-potato-sev/front.png"
+    }
+  },
+  {
+    "id": "gb-classic-salted-chips",
+    "name": "经典原味海盐薯片",
+    "family": "Walkers Crisps",
+    "country": "英国",
+    "country_code": "GB",
+    "inspiration": "参考沃克斯 原味薯片（Walkers Ready Salted Crisps）",
+    "kind": "chips",
+    "package": "bag",
+    "size_mm": [
+      130,
+      175,
+      30
+    ],
+    "colors": {
+      "primary": "#D0102A",
+      "secondary": "#FFD100"
+    },
+    "type_zh": "薯片",
+    "verb_zh": "吃一片",
+    "note_zh": "英国国民级鲜红袋装薯片，薄脆爽口带着质朴纯粹的咸香。",
+    "images": {
+      "front": "snack/gb-classic-salted-chips/front.png"
+    }
+  },
+  {
+    "id": "gb-wheat-digestive-stick",
+    "name": "经典麦香消化饼干",
+    "family": "Digestives",
+    "country": "英国",
+    "country_code": "GB",
+    "inspiration": "参考麦维他 经典消化饼干（McVitie's Digestives Original）",
+    "kind": "cookies",
+    "package": "stick",
+    "size_mm": [
+      75,
+      215,
+      75
+    ],
+    "colors": {
+      "primary": "#C8102E",
+      "secondary": "#E5A823"
+    },
+    "type_zh": "消化饼",
+    "verb_zh": "吃一片",
+    "note_zh": "下午茶的灵魂伴侣，在热红茶里迅速蘸一下咬下，酥松麦香漫开。",
+    "images": {
+      "front": "snack/gb-wheat-digestive-stick/front.png"
+    }
+  },
+  {
+    "id": "gb-malt-choco-balls",
+    "name": "麦芽脆心巧克力球",
+    "family": "Maltesers",
+    "country": "英国",
+    "country_code": "GB",
+    "inspiration": "参考玛氏 麦丽素（Maltesers）",
+    "kind": "chocolate",
+    "package": "bag",
+    "size_mm": [
+      95,
+      130,
+      22
+    ],
+    "colors": {
+      "primary": "#D81920",
+      "secondary": "#FFFFFF"
+    },
+    "type_zh": "巧克力球",
+    "verb_zh": "嚼一颗",
+    "note_zh": "轻薄香浓的牛奶巧克力裹着蜂窝麦芽脆心，在舌尖咔嚓化开。",
+    "images": {
+      "front": "snack/gb-malt-choco-balls/front.png"
+    }
+  },
+  {
+    "id": "de-square-milk-chocolate",
+    "name": "正方形牛奶巧克力排块",
+    "family": "Ritter Sport",
+    "country": "德国",
+    "country_code": "DE",
+    "inspiration": "参考瑞特斯波德 阿尔卑斯牛奶巧克力（Ritter Sport Alpine Milk Chocolate）",
+    "kind": "chocolate",
+    "package": "bar",
+    "size_mm": [
+      90,
+      90,
+      14
+    ],
+    "colors": {
+      "primary": "#0083CA",
+      "secondary": "#FFFFFF"
+    },
+    "type_zh": "排块巧克力",
+    "verb_zh": "掰一块",
+    "note_zh": "一掰即开的标志性正方形排块，十六小格醇浓香浓",
+    "images": {
+      "front": "snack/de-square-milk-chocolate/front.png"
+    }
+  },
+  {
+    "id": "de-hazelnut-cocoa-wafer",
+    "name": "榛果碎可可夹心威化饼",
+    "family": "Hanuta",
+    "country": "德国",
+    "country_code": "DE",
+    "inspiration": "参考费列罗 Hanuta 榛子威化（Ferrero Hanuta Haselnuss-Schnitte）",
+    "kind": "cookies",
+    "package": "bar",
+    "size_mm": [
+      65,
+      65,
+      15
+    ],
+    "colors": {
+      "primary": "#F4BF1A",
+      "secondary": "#4B2412"
+    },
+    "type_zh": "威化饼",
+    "verb_zh": "咬一口",
+    "note_zh": "两片深烘焙的格子脆威化之间，夹着厚实浓醇的榛子碎可可酱",
+    "images": {
+      "front": "snack/de-hazelnut-cocoa-wafer/front.png"
+    }
+  },
+  {
+    "id": "de-framed-choco-biscuit",
+    "name": "齿边巧克力黄油饼干",
+    "family": "Choco Leibniz",
+    "country": "德国",
+    "country_code": "DE",
+    "inspiration": "参考百乐顺 莱布尼茨牛奶巧克力饼干（Bahlsen Choco Leibniz Milk Chocolate）",
+    "kind": "cookies",
+    "package": "box",
+    "size_mm": [
+      210,
+      125,
+      28
+    ],
+    "colors": {
+      "primary": "#133b78",
+      "secondary": "#f0b323"
+    },
+    "type_zh": "饼干",
+    "verb_zh": "咬一口",
+    "note_zh": "香浓黄油饼干镶嵌在带齿状花边的厚实牛奶巧克力底座中",
+    "images": {
+      "front": "snack/de-framed-choco-biscuit/front.png"
+    }
+  },
+  {
+    "id": "fr-schoolboy-choco-biscuit",
+    "name": "浮雕巧克力黄油饼干",
+    "family": "Petit Ecolier",
+    "country": "法国",
+    "country_code": "FR",
+    "inspiration": "参考LU 小学生牛奶巧克力饼干（LU Petit Écolier Milk Chocolate）",
+    "kind": "cookies",
+    "package": "box",
+    "size_mm": [
+      190,
+      78,
+      35
+    ],
+    "colors": {
+      "primary": "#B91C1C",
+      "secondary": "#582F18"
+    },
+    "type_zh": "饼干",
+    "verb_zh": "吃一块",
+    "note_zh": "黄油酥饼上覆着一块凸印小学生图案的厚厚牛奶巧克力板",
+    "images": {
+      "front": "snack/fr-schoolboy-choco-biscuit/front.png"
+    }
+  },
+  {
+    "id": "it-hazelnut-wafer-bag",
+    "name": "榛子夹心威化饼干",
+    "family": "Loacker Classic",
+    "country": "意大利",
+    "country_code": "IT",
+    "inspiration": "参考莱家 经典榛果味威化饼干（Loacker Classic Napolitaner）",
+    "kind": "cookies",
+    "package": "bag",
+    "size_mm": [
+      65,
+      145,
+      16
+    ],
+    "colors": {
+      "primary": "#D32F2F",
+      "secondary": "#1E4B88"
+    },
+    "type_zh": "威化",
+    "verb_zh": "咬一口",
+    "note_zh": "酥脆松化的层层轻盈威化，夹着香浓细腻的烘焙榛子可可酱。",
+    "images": {
+      "front": "snack/it-hazelnut-wafer-bag/front.png"
+    }
+  },
+  {
+    "id": "nl-caramel-waffle-cookies",
+    "name": "经典焦糖夹心华夫饼",
+    "family": "Daelmans Stroopwafels",
+    "country": "荷兰",
+    "country_code": "NL",
+    "inspiration": "参考戴尔曼斯 经典焦糖华夫饼（Daelmans Stroopwafels Original Caramel）",
+    "kind": "cookies",
+    "package": "pouch",
+    "size_mm": [
+      95,
+      230,
+      65
+    ],
+    "colors": {
+      "primary": "#11448B",
+      "secondary": "#E59035"
+    },
+    "type_zh": "华夫饼",
+    "verb_zh": "咬一口",
+    "note_zh": "盖在热咖啡杯口待蒸汽微微融化糖心，一口咬下尽是浓郁的肉桂焦糖香",
+    "images": {
+      "front": "snack/nl-caramel-waffle-cookies/front.png"
+    }
+  },
+  {
+    "id": "be-spiced-caramel-biscuit",
+    "name": "焦糖风味脆饼干",
+    "family": "Lotus Biscoff",
+    "country": "比利时",
+    "country_code": "BE",
+    "inspiration": "参考莲花 焦糖饼干（Lotus Biscoff Original Caramelised Biscuit）",
+    "kind": "cookies",
+    "package": "bag",
+    "size_mm": [
+      65,
+      185,
+      45
+    ],
+    "colors": {
+      "primary": "#C8102E",
+      "secondary": "#FFFFFF"
+    },
+    "type_zh": "饼干",
+    "verb_zh": "嚼一片",
+    "note_zh": "带着浓郁肉桂与焦糖香气的薄脆饼干，搭配黑咖啡是绝配。",
+    "images": {
+      "front": "snack/be-spiced-caramel-biscuit/front.png"
+    }
+  },
+  {
+    "id": "se-nordic-milk-chocolate-bar",
+    "name": "经典牛奶巧克力排块",
+    "family": "Marabou Mjölkchoklad",
+    "country": "瑞典",
+    "country_code": "SE",
+    "inspiration": "参考马拉宝 牛奶巧克力（Marabou Mjölkchoklad）",
+    "kind": "chocolate",
+    "package": "bar",
+    "size_mm": [
+      90,
+      225,
+      12
+    ],
+    "colors": {
+      "primary": "#f5b722",
+      "secondary": "#c81e28"
+    },
+    "type_zh": "巧克力",
+    "verb_zh": "掰一块",
+    "note_zh": "瑞典国民级的鲜黄色大排块，入口满是浓醇丝滑的焦糖风味牛奶香",
+    "images": {
+      "front": "snack/se-nordic-milk-chocolate-bar/front.png"
+    }
+  },
+  {
+    "id": "pl-crispy-wafer-bar",
+    "name": "经典巧克力涂层威化排块",
+    "family": "Prince Polo",
+    "country": "波兰",
+    "country_code": "PL",
+    "inspiration": "参考Prince Polo 经典黑巧涂层威化（Prince Polo Classic）",
+    "kind": "chocolate",
+    "package": "bar",
+    "size_mm": [
+      135,
+      48,
+      12
+    ],
+    "colors": {
+      "primary": "#E5A93C",
+      "secondary": "#C8102E"
+    },
+    "type_zh": "威化",
+    "verb_zh": "咬一口",
+    "note_zh": "多层酥脆轻盈的威化裹着浓郁巧克力，撕开金红包装便闻到浓郁可可香",
+    "images": {
+      "front": "snack/pl-crispy-wafer-bar/front.png"
+    }
+  },
+  {
+    "id": "ru-kerchief-girl-chocolate-bar",
+    "name": "头巾女孩牛奶巧克力排块",
+    "family": "Alenka",
+    "country": "俄罗斯",
+    "country_code": "RU",
+    "inspiration": "参考红色十月 阿廖卡牛奶巧克力（Red October Alenka Milk Chocolate）",
+    "kind": "chocolate",
+    "package": "bar",
+    "size_mm": [
+      75,
+      155,
+      9
+    ],
+    "colors": {
+      "primary": "#F4E09E",
+      "secondary": "#5C3A21"
+    },
+    "type_zh": "巧克力",
+    "verb_zh": "掰一块",
+    "note_zh": "印着裹头巾大眼婴儿肖像的传统俄式排块，入口是浓郁柔滑的甜牛奶香",
+    "images": {
+      "front": "snack/ru-kerchief-girl-chocolate-bar/front.png"
+    }
+  },
+  {
+    "id": "us-fish-cheddar-crackers",
+    "name": "小鱼造型切达芝士饼干",
+    "family": "Goldfish Crackers",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考非凡农庄 小鱼饼干 切达芝士味（Pepperidge Farm Goldfish Cheddar Crackers）",
+    "kind": "cookies",
+    "package": "pouch",
+    "size_mm": [
+      105,
+      185,
+      60
+    ],
+    "colors": {
+      "primary": "#FAF9F5",
+      "secondary": "#F37023"
+    },
+    "type_zh": "咸饼干",
+    "verb_zh": "抓一把",
+    "note_zh": "金黄酥脆的小鱼造型，带着浓郁咸香的切达芝士风味",
+    "images": {
+      "front": "snack/us-fish-cheddar-crackers/front.png"
+    }
+  },
+  {
+    "id": "us-square-cheese-crackers",
+    "name": "切达芝士方块脆饼",
+    "family": "Cheez-It",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考Cheez-It 原味烘焙芝士薄脆饼干（Cheez-It Original Baked Snack Crackers）",
+    "kind": "cookies",
+    "package": "box",
+    "size_mm": [
+      155,
+      215,
+      60
+    ],
+    "colors": {
+      "primary": "#D32027",
+      "secondary": "#F5B418"
+    },
+    "type_zh": "脆饼干",
+    "verb_zh": "捏一片",
+    "note_zh": "大红盒里带着中心透气孔的薄脆金黄小方块，咸香酥脆、满口浓郁烤芝士味。",
+    "images": {
+      "front": "snack/us-square-cheese-crackers/front.png"
+    }
+  },
+  {
+    "id": "us-twist-chewy-candy",
+    "name": "草莓风味螺旋扭扭糖",
+    "family": "Twizzlers Twists",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考Twizzlers 草莓味扭扭糖（Twizzlers Strawberry Twists）",
+    "kind": "candy",
+    "package": "bag",
+    "size_mm": [
+      230,
+      95,
+      25
+    ],
+    "colors": {
+      "primary": "#C8102E",
+      "secondary": "#FFFFFF"
+    },
+    "type_zh": "扭扭糖",
+    "verb_zh": "抽一根",
+    "note_zh": "如电话线般螺旋盘绕的深红胶糖，韧劲十足，还能咬开两端当吸管喝汽水。",
+    "images": {
+      "front": "snack/us-twist-chewy-candy/front.png"
+    }
+  },
+  {
+    "id": "us-toaster-fruit-pastry",
+    "name": "糖霜草莓夹心烤酥饼",
+    "family": "Pop-Tarts",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考家乐氏 Pop-Tarts 果酱烤酥（Kellogg's Pop-Tarts Frosted Strawberry）",
+    "kind": "cookies",
+    "package": "box",
+    "size_mm": [
+      95,
+      140,
+      70
+    ],
+    "colors": {
+      "primary": "#0072CE",
+      "secondary": "#E31837"
+    },
+    "type_zh": "烤酥饼",
+    "verb_zh": "咬一口",
+    "note_zh": "覆着糖霜与细密彩粒的扁平酥饼，放进烤面包机加热后甜软果酱直淌。",
+    "images": {
+      "front": "snack/us-toaster-fruit-pastry/front.png"
+    }
+  },
+  {
+    "id": "us-golden-sponge-cake",
+    "name": "奶油夹心金黄海绵蛋糕",
+    "family": "Twinkies",
+    "country": "美国",
+    "country_code": "US",
+    "inspiration": "参考Hostess Twinkies奶油夹心蛋糕（Hostess Twinkies）",
+    "kind": "snack",
+    "package": "bag",
+    "size_mm": [
+      120,
+      70,
+      35
+    ],
+    "colors": {
+      "primary": "#005BAA",
+      "secondary": "#F4C430"
+    },
+    "type_zh": "夹心蛋糕",
+    "verb_zh": "咬一口",
+    "note_zh": "金黄松软的长条海绵蛋糕，里面注满了甜润的香草奶油夹心。",
+    "images": {
+      "front": "snack/us-golden-sponge-cake/front.png"
+    }
+  },
+  {
+    "id": "mx-berry-choco-cake",
+    "name": "草莓奶油夹心巧克力蛋糕",
+    "family": "Gansito",
+    "country": "墨西哥",
+    "country_code": "MX",
+    "inspiration": "参考Marinela Gansito（Marinela Gansito Snack Cake）",
+    "kind": "snack",
+    "package": "bag",
+    "size_mm": [
+      135,
+      52,
+      32
+    ],
+    "colors": {
+      "primary": "#12519E",
+      "secondary": "#DE2328"
+    },
+    "type_zh": "夹心蛋糕",
+    "verb_zh": "咬一口",
+    "note_zh": "冷冻后更爽脆的巧克力脆皮，包裹着草莓果酱与奶油夹心",
+    "images": {
+      "front": "snack/mx-berry-choco-cake/front.png"
+    }
+  },
+  {
+    "id": "br-crispy-layer-wafer",
+    "name": "多层夹心威化饼",
+    "family": "Bauducco Wafer",
+    "country": "巴西",
+    "country_code": "BR",
+    "inspiration": "参考Bauducco 巧克力味多层威化（Bauducco Wafer Chocolate）",
+    "kind": "cookies",
+    "package": "bag",
+    "size_mm": [
+      170,
+      65,
+      30
+    ],
+    "colors": {
+      "primary": "#F7B519",
+      "secondary": "#4E2714"
+    },
+    "type_zh": "威化",
+    "verb_zh": "咬一口",
+    "note_zh": "醒目的暖黄底色包装，层层薄脆酥皮间抹满了香浓甜润的夹心",
+    "images": {
+      "front": "snack/br-crispy-layer-wafer/front.png"
+    }
+  },
+  {
+    "id": "ca-rainbow-choco-tin",
+    "name": "彩色糖衣巧克力豆筒",
+    "family": "Smarties",
+    "country": "加拿大",
+    "country_code": "CA",
+    "inspiration": "参考雀巢 Smarties 彩色巧克力豆筒（Nestlé Smarties Milk Chocolate Hex Tube）",
+    "kind": "chocolate",
+    "package": "tin",
+    "size_mm": [
+      30,
+      145,
+      30
+    ],
+    "colors": {
+      "primary": "#005EB8",
+      "secondary": "#E4002B"
+    },
+    "type_zh": "巧克力豆",
+    "verb_zh": "倒出一颗",
+    "note_zh": "轻摇纸筒沙沙作响，脆壳糖衣包裹着顺滑牛奶巧克力",
+    "images": {
+      "front": "snack/ca-rainbow-choco-tin/front.png"
+    }
+  },
+  {
+    "id": "ca-coffee-wafer-bar",
+    "name": "咖啡威化巧克力棒",
+    "family": "Coffee Crisp",
+    "country": "加拿大",
+    "country_code": "CA",
+    "inspiration": "参考雀巢 咖啡脆威化巧克力（Nestlé Coffee Crisp）",
+    "kind": "chocolate",
+    "package": "bar",
+    "size_mm": [
+      42,
+      135,
+      15
+    ],
+    "colors": {
+      "primary": "#F7D117",
+      "secondary": "#C8102E"
+    },
+    "type_zh": "威化棒",
+    "verb_zh": "咬一口",
+    "note_zh": "轻脆的多层酥脆威化夹着微苦咖啡奶油，外裹一层顺滑牛奶巧克力。",
+    "images": {
+      "front": "snack/ca-coffee-wafer-bar/front.png"
+    }
+  },
+  {
+    "id": "tr-caramel-biscuit-bar",
+    "name": "焦糖饼干巧克力棒",
+    "family": "Albeni",
+    "country": "土耳其",
+    "country_code": "TR",
+    "inspiration": "参考Ülker Albeni 焦糖巧克力棒（Ülker Albeni Chocolate Coated Biscuit with Caramel）",
+    "kind": "chocolate",
+    "package": "bar",
+    "size_mm": [
+      140,
+      38,
+      16
+    ],
+    "colors": {
+      "primary": "#ECA836",
+      "secondary": "#431E12"
+    },
+    "type_zh": "巧克力棒",
+    "verb_zh": "咬一口",
+    "note_zh": "浓稠拉丝的焦糖裹着酥脆饼干芯，外层覆满香甜牛奶巧克力",
+    "images": {
+      "front": "snack/tr-caramel-biscuit-bar/front.png"
+    }
+  },
+  {
+    "id": "au-choc-creme-biscuit",
+    "name": "双层巧克力夹心涂层饼干",
+    "family": "Tim Tam",
+    "country": "澳大利亚",
+    "country_code": "AU",
+    "inspiration": "参考雅乐思 Tim Tam 原味巧克力夹心饼干（Arnott's Tim Tam Original Chocolate Biscuits）",
+    "kind": "cookies",
+    "package": "bag",
+    "size_mm": [
+      190,
+      75,
+      35
+    ],
+    "colors": {
+      "primary": "#3B1E16",
+      "secondary": "#DFB15B"
+    },
+    "type_zh": "夹心饼干",
+    "verb_zh": "咬一块",
+    "note_zh": "两端各咬一小口当作吸管浸入热牛奶，吸上一大口后整块在舌尖化开",
+    "images": {
+      "front": "snack/au-choc-creme-biscuit/front.png"
+    }
+  },
+  {
+    "id": "au-crispy-bbq-crackers",
+    "name": "烧烤风味烘焙咸脆饼干",
+    "family": "Shapes",
+    "country": "澳大利亚",
+    "country_code": "AU",
+    "inspiration": "参考雅乐思 Shapes 烧烤味咸脆饼干（Arnott's Shapes Barbecue）",
+    "kind": "cookies",
+    "package": "box",
+    "size_mm": [
+      160,
+      210,
+      52
+    ],
+    "colors": {
+      "primary": "#E65100",
+      "secondary": "#FFD54F"
+    },
+    "type_zh": "咸脆饼",
+    "verb_zh": "抓一把",
+    "note_zh": "澳洲国民级咸味脆饼，表面撒满了烘烤入味的红色烧烤调味粒",
+    "images": {
+      "front": "snack/au-crispy-bbq-crackers/front.png"
+    }
+  },
+  {
+    "id": "za-chutney-potato-chips",
+    "name": "果香查特尼味薯片",
+    "family": "Simba Potato Chips",
+    "country": "南非",
+    "country_code": "ZA",
+    "inspiration": "参考辛巴 查特尼味薯片（Simba Mrs. H.S. Ball's Chutney Potato Chips）",
+    "kind": "chips",
+    "package": "bag",
+    "size_mm": [
+      160,
+      230,
+      50
+    ],
+    "colors": {
+      "primary": "#F5B800",
+      "secondary": "#1E5E2E"
+    },
+    "type_zh": "薯片",
+    "verb_zh": "吃一片",
+    "note_zh": "裹满南非国民特色酸甜果酱风味的薄脆薯片，包装上的狮子元气满满地咆哮。",
+    "images": {
+      "front": "snack/za-chutney-potato-chips/front.png"
+    }
+  },
+  {
+    "id": "cn-daily-mix-nuts",
+    "name": "每日混合坚果",
+    "family": "Daily Nuts",
+    "country": "中国",
+    "country_code": "CN",
+    "inspiration": "参考三只松鼠 每日坚果（Three Squirrels Daily Nuts）",
+    "kind": "nuts",
+    "package": "bag",
+    "size_mm": [
+      110,
+      150,
+      18
+    ],
+    "colors": {
+      "primary": "#F7F4EB",
+      "secondary": "#E58229"
+    },
+    "type_zh": "坚果",
+    "verb_zh": "嚼一把",
+    "note_zh": "坚果与果干分仓锁鲜的日常营养小袋",
+    "images": {
+      "front": "snack/cn-daily-mix-nuts/front.png"
+    }
+  }
+]
