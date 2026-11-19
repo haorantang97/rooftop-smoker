@@ -392,6 +392,7 @@ wss.on('connection', (ws) => {
     p.tokens--;
     let msg;
     try { msg = JSON.parse(data.toString()); } catch { return; }
+    if (msg && msg.t === 'ping') { send(ws, { t: 'pong' }); return; } // 浏览器自己测连接还活着没（不算「在动」）
     if (msg && typeof msg === 'object') { if (msg.t !== 'sync') p.lastAct = now; handle(p, msg); } // sync 是抽着烟时自动发的，不算「在动」
   });
   ws.on('close', () => { for (const t of p.asks.values()) clearTimeout(t.timer); if (!closing) { logEv(p, 'leave', { dur: p.t0 ? Date.now() - p.t0 : 0, idle: p.kicked ? 1 : undefined }); saveGhost(p); } leave(p); });

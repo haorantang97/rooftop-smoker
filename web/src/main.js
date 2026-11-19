@@ -659,11 +659,24 @@ const cigShop = createCigShop({
 // ---------- 网络 ----------
 function mkPlayer(d) { return { ...d, puffing: false, puffT: 0, flame: 0, sipT: 0, loose: d.loose || [] }; }
 function connect() {
-  const ws = new WebSocket(`${location.protocol === 'https:' ? 'wss' : 'ws'}://${location.host}/ws`); S.ws = ws;
+  const ws = new WebSocket(`${location.protocol === 'https:' ? 'wss' : 'ws'}://${location.host}/ws`); S.ws = ws; S.lastRx = performance.now();
   ws.onopen = () => { $('#conn').classList.add('hidden'); send({ t: 'hello', internal: store.get('smoke.internal', false) || undefined, did: store.get('smoke.did', ''), sid: sess.get('smoke.sid', ''), ret: DEV_RET, dev: matchMedia('(pointer: coarse)').matches ? 'm' : 'd', lang: document.documentElement.lang, load: Math.round(performance.now()), tz: -new Date().getTimezoneOffset(), token: sess.get('smoke.token', '') || undefined, name: (sess.get('smoke.named', false) && sess.get('smoke.name', '')) || undefined }); };
   ws.onclose = () => { if (S.ws !== ws) return; if (S.idle) { $('#idle').classList.remove('hidden'); return; } $('#conn').classList.remove('hidden'); setTimeout(connect, 1500); }; // 发呆被请出去：不自动重连，等他点「回来」
-  ws.onmessage = (e) => { let m; try { m = JSON.parse(e.data); } catch { return; } onMsg(m); };
+  ws.onmessage = (e) => { if (S.ws === ws) S.lastRx = performance.now(); let m; try { m = JSON.parse(e.data); } catch { return; } if (m.t !== 'pong') onMsg(m); };
 }
+// 连接悄悄断了（电脑睡眠、换网络、代理断了）浏览器常常很久都不触发 onclose：那时按什么都没反应，也不提示。
+// 所以自己测：5 秒没收到任何消息就 ping 一下，ping 了 8 秒没回音就当断了，显示「正在重新连接」并马上重连（服务器 30 分钟内按原样续上）
+// 只认「ping 了没回」：后台标签页的定时器会被浏览器放慢，单看安静了多久会误判
+function checkLink() {
+  const ws = S.ws; if (!ws || S.idle) return;
+  const now = performance.now(), quiet = now - (S.lastRx || now), waiting = S.lastPing > S.lastRx;
+  const dead = ws.readyState === 1 ? waiting && now - S.lastPing > 8000 : quiet > 20000; // 一直连不上 / 关不掉也重来
+  if (dead) { S.ws = null; S.lastPing = 0; try { ws.close(); } catch {} $('#conn').classList.remove('hidden'); connect(); return; }
+  if (ws.readyState === 1 && quiet > 5000 && !waiting) { S.lastPing = now; ws.send('{"t":"ping"}'); }
+}
+setInterval(checkLink, 2500);
+// 从睡眠 / 后台回来、网络恢复、切回这个窗口：马上测一次
+for (const [el, ev] of [[document, 'visibilitychange'], [window, 'online'], [window, 'focus']]) el.addEventListener(ev, () => { if (!document.hidden) checkLink(); });
 function onMsg(m) {
   const p = m.id ? S.players.get(m.id) : null, mine = m.id === S.meId;
   switch (m.t) {
