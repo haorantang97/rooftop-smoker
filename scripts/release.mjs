@@ -30,5 +30,6 @@ const mb = (f) => (fs.statSync(path.join(OUT, f)).size / 1048576).toFixed(1);
 const keepVistas = (process.argv.find((a) => a.startsWith('--vistas=')) || '').slice(9).split(',').filter(Boolean);
 const vistaEx = fs.existsSync(path.join(ROOT, 'dist/vista-models')) ? fs.readdirSync(path.join(ROOT, 'dist/vista-models')).filter((d) => !keepVistas.includes(d)).flatMap((d) => ['--exclude', `dist/vista-models/${d}`]) : [];
 run('tar', ['-czf', path.join(OUT, 'smoke-break-patch.tgz'), '--no-xattrs', '--exclude', '.DS_Store', '--exclude', 'dist/assets/tex', '--exclude', 'dist/assets/models', ...vistaEx, 'server.js', 'package.json', 'package-lock.json', 'public', 'dist', 'deploy/setup-vm.sh', 'scripts/set-scene.mjs', 'scripts/analytics.mjs', ...jsons], { env: { ...process.env, COPYFILE_DISABLE: '1' } });
+fs.mkdirSync(path.join(ROOT, 'output'), { recursive: true });
 for (const f of ['smoke-break.tgz', 'smoke-break-patch.tgz']) fs.copyFileSync(path.join(OUT, f), path.join(ROOT, 'output', f)); // 给用户上传的放 output/
 console.log(`发布包：.tmp/release/smoke-break.tgz（${mb('smoke-break.tgz')} MB，第一次装用）、smoke-break-patch.tgz（${mb('smoke-break-patch.tgz')} MB，更新用）`);
