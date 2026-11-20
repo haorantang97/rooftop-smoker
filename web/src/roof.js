@@ -60,18 +60,15 @@ export function createRoof(scene) {
   const path = add(new THREE.PlaneGeometry(1.6, 12), new THREE.MeshStandardMaterial({ map: stoneTex(), roughness: 0.8 }), 7.4, 0.005, 6.4); path.rotation.x = -Math.PI / 2; path.castShadow = false;
   add(new THREE.BoxGeometry(W, 30, D), facadeMat, CX, -15.02, CZ);   // 楼体
 
-  // ---------- 四周：贴地的金属底槽 + 无框玻璃，没有扶手 ----------
-  // 玻璃顶边 0.95 米，比视线（1.32 米）低一大截；底槽只有 6 厘米。站在边上往外、往下看都不挡
-  const GLASS_TOP = 0.95, SHOE = 0.06;
+  // ---------- 四周：贴地的金属底槽 + 无框清玻璃，没有扶手、没有顶边压条 ----------
+  // 要的是「往外看画面里没有任何分割线」：横屏竖直视角 70°，平视时画面下沿在视线下方约 32°。
+  // 玻璃顶边 0.6 米（视线 1.32 米），离边 1 米以内平视时顶边落在画面下沿之外；人能贴到离玻璃 0.25 米
+  const GLASS_TOP = 0.6, SHOE = 0.05;
   const glass = new THREE.MeshStandardMaterial({ color: '#cfe6ee', roughness: 0.3, metalness: 0, envMapIntensity: 0.15, transparent: true, opacity: 0.08, depthWrite: false, side: THREE.DoubleSide }); // 清玻璃：几乎不反光，不挡风景
-  const glassEdge = new THREE.MeshStandardMaterial({ color: '#a8d0d8', roughness: 0.2, metalness: 0, transparent: true, opacity: 0.35, depthWrite: false }); // 玻璃的切边和拼缝：淡淡一条青线，让人看得出那里有玻璃
   const edge = (x, z, len, alongX) => {
-    const box = (l, h, t, y, mat) => { const m = add(new THREE.BoxGeometry(alongX ? l : t, h, alongX ? t : l), mat, x, y, z); return m; };
-    box(len, SHOE, 0.12, SHOE / 2, darkMetal);
+    const box = (l, h, t, y, mat) => add(new THREE.BoxGeometry(alongX ? l : t, h, alongX ? t : l), mat, x, y, z);
+    box(len, SHOE, 0.1, SHOE / 2, darkMetal);
     const gh = GLASS_TOP - SHOE, g = box(len, gh, 0.02, SHOE + gh / 2, glass); g.castShadow = false; g.renderOrder = 5;
-    const top = box(len, 0.012, 0.022, GLASS_TOP, glassEdge); top.castShadow = false; top.renderOrder = 6;
-    const n = Math.round(len / 1.5); // 一块玻璃约 1.5 米宽，拼缝处一条竖线
-    for (let i = 1; i < n; i++) { const o = -len / 2 + (i * len) / n; const s = add(new THREE.BoxGeometry(alongX ? 0.008 : 0.022, gh, alongX ? 0.022 : 0.008), glassEdge, alongX ? x + o : x, SHOE + gh / 2, alongX ? z : z + o); s.castShadow = false; s.renderOrder = 6; }
   };
   edge(CX, EDGE_Z - 0.15, W + 0.3, true); edge(CX, Z1 + 0.15, W + 0.3, true); // 前后两边（伸到角上和两侧接上）
   edge(X0 - 0.15, CZ, D + 0.3, false); edge(X1 + 0.15, CZ, D + 0.3, false);
@@ -182,7 +179,7 @@ export function createRoof(scene) {
   group.traverse((o) => { if (o.isMesh && (o.material === cushion || o.material === cushion2) && !o.userData.pick) { o.userData.pick = { kind: 'seat' }; seatPicks.push(o); } });
   lawn.userData.pick = { kind: 'ground', label: '坐在草坪上' }; seatPicks.push(lawn);
 
-  const world = { bounds: [X0 + 0.25, X1 - 0.25, EDGE_Z + 0.2, Z1 - 0.25], obstacles };
+  const world = { bounds: [X0 + 0.1, X1 - 0.1, EDGE_Z + 0.1, Z1 - 0.1], obstacles }; // 玻璃在边线外 0.15 米：人最近能贴到离玻璃 0.25 米
   return {
     group, ashtray, door, world, seats, seatPicks,
     update(n, t) {
